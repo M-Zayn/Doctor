@@ -1,0 +1,2239 @@
+body
+    font-family: myFirstFont, sans-serif
+@font-face 
+    font-family: myFirstFont
+    src: url(fonts/Nexalight.otf)
+a
+    text-decoration: none
+    color: #000
+.overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+// navbar
+.upper-nav
+    width: 100%
+    height: 50px
+    background: url(../imgs/pattern@60px.png)
+    position: relative
+    .overlay
+        background: rgba(255,255,255, .6)
+        padding: 14px 0
+        a:hover
+            text-decoration: none
+            color: #DC0032
+        i:hover
+            color: #DC0032
+    .left
+        float: left
+        > :last-child
+            margin: 0 26px
+        i
+            padding: 0 3px
+        span
+            font-family: myFirstFont, sans-serif
+            font-weight: 400
+            padding: 0 1px 0 5px
+    .right
+        float: right
+        i
+            margin: 0 9px
+        .mark
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            display: inline-block
+            line-height: 1.1
+            font-size: 15px
+            margin: 0 0 0 36px
+            a
+                color: #FFF
+            i
+                margin: auto
+// header
+.header
+    width: 100%
+    height: 540px
+    background: #c30b2a
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%)
+    padding: 40px 0
+    .nav
+        background: rgba(255, 255, 255, 0.059)
+        padding: 0 0 0 0
+        margin: 0 0 10px 0
+        height: 70px
+        ul
+            font-family: myFirstFont, sans-serif
+            font-size: 16px
+            color: #FFF
+            margin: 0
+            a
+                text-decoration: none
+                color: #FFF
+            li
+                float: left
+                margin: 0 13px
+                padding: 18px 0
+            .sp-li
+                padding: 25px 0
+                i
+                    color: #FFF
+            .home
+                background: #c30b2a
+                padding: 16px 13px
+                .home-icon
+                    display: block
+                    padding: 0 0 5px 0
+            .search
+                margin: 0 0 0 90px
+                
+    .intro
+        font-family: myFirstFont, sans-serif
+        color: #FFF
+        h1
+            font-size: 50px
+            font-weight: 600
+            margin-top: 12px
+            margin-bottom: 6px
+        h3
+            font-weight: lighter
+            font-size: 40px
+            letter-spacing: 1.1px
+            margin-bottom: 16px
+        p
+            font-size: 19px
+            font-weight: 100
+            line-height: 1.7
+            margin-bottom: 56px
+        button
+            width: 116px
+            height: 44px
+            border: none
+            border-radius: 4px
+            background-color: rgb(255, 255, 255)
+            color: #c30b2a
+            font-family: myFirstFont, sans-serif
+            font-size: 15px
+            padding: 3px 0 0 0
+            &:hover
+                box-shadow: 1px 1px 6px 1px rgba(189,85,85,1)
+    .doc
+        position: relative
+        &-img
+            width: 239px
+            height: 315px
+            img
+                width: 100%
+                height: 100%
+
+//banner
+.banner
+    margin: 66px auto
+    width: 100%
+    height: 400px
+    overflow: hidden
+    img
+        margin: auto
+        display: block
+
+
+//best article
+.best-article
+    .ba-header
+        height: 86px
+        background: url(../imgs/ba-icon.png) left no-repeat
+        padding: 20px 0px
+        p
+            font-family: myFirstFont, sans-serif
+            font-size: 30px
+            margin: 5px 0 0 0
+            span
+                color: #c30b2a
+                font-weight: bold
+    
+    .cel
+        overflow: hidden
+        position: relative
+        cursor: pointer
+        &:hover
+            -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.16)
+            -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.16)
+            box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.16)
+        &:hover .overlay
+            opacity: 1
+        &:hover .title
+            bottom: 0px
+        img
+            width: 100%
+            height: 320px
+        .overlay
+            transition: all .3s ease-in-out
+            background: rgba(195, 11, 42, .6)
+            opacity: 0
+            .read-more
+                width: 56%
+                margin: 66px auto 0
+                .hexagon
+                    float: left
+                    position: relative
+                    width: 40px
+                    height: 23.09px
+                    background-color: transparent
+                    margin: 11.55px 3px
+                    border-left: solid 2px #ffffff
+                    border-right: solid 2px #ffffff
+                    transition: all .0s ease-in-out
+                  
+                    &:before, &:after
+                      content: ""
+                      position: absolute
+                      z-index: 1
+                      width: 28.28px
+                      height: 28.28px
+                      -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                      -ms-transform: scaleY(0.5774) rotate(-45deg)
+                      transform: scaleY(0.5774) rotate(-45deg)
+                      background-color: inherit
+                      left: 3.8579px
+                  
+                    &:before
+                      top: -14.1421px
+                      border-top: solid 2.8284px #ffffff
+                      border-right: solid 2.8284px #ffffff
+                  
+                    &:after
+                      bottom: -14.1421px
+                      border-bottom: solid 2.8284px #ffffff
+                      border-left: solid 2.8284px #ffffff
+                      
+                    &:hover
+                        background-color: #FFF
+                        position: relative
+                        i
+                            color: #c30b2a
+                            position: absolute
+                            top: 1px
+                            left: 0px
+                            width: 36px
+                            z-index: 999
+                    i
+                        font-size: 19px
+                        color: #FFF
+                button
+                    width: 100%
+                    height: 44px
+                    margin: 30px 0
+                    padding: 6px 0 0 0
+                    border: none
+                    border-radius: 4px
+                    background-color: rgb(255, 255, 255)
+                    color: #c30b2a
+                    font-family: myFirstFont, sans-serif
+                    &:hover
+                        box-shadow: 1px 1px 6px 1px rgba(189,85,85,1)
+        .title
+            transition: all .4s ease-in-out
+            font-family: myFirstFont, sans-serif
+            position: absolute
+            left: 0
+            bottom: -70px
+            width: 100%
+            height: 75px
+            background: #FFF
+            padding: 16px 8px
+            p
+                font-size: 15px
+    .more-articles
+        width: 210px
+        margin: 60px auto
+        button
+            background: transparent
+            border: 1px solid #c30b2a
+            border-radius: 4px
+            color: #c30b2a
+            font-family: myFirstFont, sans-serif
+            padding: 8px 12px
+            img
+                margin-left: 12px
+    .controls-top
+        .btn-left
+            position: absolute
+            left: -38px
+            top: 45%
+            font-size: 24px
+            font-weight: bold
+            color: #c30b2a
+        .btn-right
+            position: absolute
+            right: -38px
+            top: 45%
+            font-size: 24px
+            font-weight: bold
+            color: #c30b2a
+
+//best article
+.videos
+    background: #f5f5f5
+    padding: 56px 0 65px 0
+    .uv-header
+        height: 86px
+        background: url(../imgs/uv-icon.png) left no-repeat
+        padding: 20px 0px
+        p
+            font-family: myFirstFont, sans-serif
+            font-size: 30px
+            margin: 5px 0 0 0
+            span
+                color: #c30b2a
+                font-weight: bold
+    .uv-disc
+        font-family: myFirstFont, sans-serif
+        font-size: 18px
+        padding: 16px 0
+        margin: 16px 0 29px 0
+    .list-vids
+        position: relative
+        .scroll-line
+            width: 2px
+            height: 100%
+            background: #c30b2a
+            position: absolute
+            top: 0
+            left: -30px
+            span
+                width: 10px
+                height: 10px
+                background: #c30b2a
+                border-radius: 50%
+                position: absolute
+                top: 26px
+                left: -4px
+        .listed-vid
+            background: #FFF
+            width: 100%
+            height: 112px
+            cursor: pointer
+            transition: all .2s ease-in-out
+            &:hover
+                background: #bb0b27
+            &:hover .img
+                        span
+                            display: none
+            &:hover .img
+                        .overlay
+                            opacity: 1
+            &:hover .vid-detail
+                        p
+                            color: #FaFaFa
+            &:hover .vid-detail
+                        .play-line
+                            background: #000
+            &:hover .vid-detail
+                        .play-line
+                            span
+                                background: #000
+            &:hover .vid-detail
+                        .min-detail
+                            color: #fdfdfd
+            .img
+                position: relative
+                width: 25%
+                height: 100%
+                background: url(../imgs/binoculars.jpg) center
+                background-size: cover
+                float: left
+                transition: all .2s ease-in-out
+                .overlay
+                    width: 100%
+                    height: 100%
+                    background: rgba(255,255,255, .4)
+                    transition: all .2s ease-in-out
+                    opacity: 0
+                    .vid-icons
+                        width: 66%
+                        margin: 33px auto
+                        .hexagon
+                            float: left
+                            position: relative
+                            width: 25px
+                            height: 14.43px
+                            background-color: transparent
+                            margin: 7.22px 2px
+                            border-left: solid 2px #FFF
+                            border-right: solid 2px #FFF
+                          
+                            &:before, &:after
+                              content: ""
+                              position: absolute
+                              z-index: 1
+                              width: 17.68px
+                              height: 17.68px
+                              -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                              -ms-transform: scaleY(0.5774) rotate(-45deg)
+                              transform: scaleY(0.5774) rotate(-45deg)
+                              background-color: inherit
+                              left: 1.6612px
+                          
+                            &:before
+                              top: -8.8388px
+                              border-top: solid 2.8284px #FFF
+                              border-right: solid 2.8284px #FFF
+                          
+                            &:after
+                              bottom: -8.8388px
+                              border-bottom: solid 2.8284px #FFF
+                              border-left: solid 2.8284px #FFF
+                            &:hover
+                                background-color: #FFF
+                                i
+                                    color: #c30b2a
+                                    z-index: 999
+                            i
+                                color: #FFF
+                                font-size: 12px
+                                width: 21px
+                                position: absolute
+                                top: 3px
+                                left: 0
+                span
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    height: 30px
+                    width: 30px
+                    background: #FFF
+                    color: #c30b2a
+                    font-size: 14px
+                    padding: 6px 0
+            .vid-detail
+                width: 75%
+                float: left
+                padding: 6px 8px
+                p
+                    font-family: myFirstFont, sans-serif
+                    font-size: 16px
+                    color: #111
+                    margin-bottom: 6px
+                .play-line
+                    display: block
+                    height: 1px
+                    width: 50px
+                    float: left
+                    margin: 9px 0 16px 0
+                    background: #c30b2a
+                    span
+                        display: block
+                        width: 6px
+                        height: 6px
+                        background: #c30b2a
+                        border-radius: 50%
+                        margin: -2px 0 2px 0
+                .min-detail
+                    float: left
+                    font-size: 12px
+                    color: #b5b5b5
+                    background: transparent
+                    span
+                        font-family: myFirstFont, sans-serif
+                        display: inline-block
+                        margin: 0 9px 0 0
+                        i
+                            float: left
+                            padding: 1px 3px 0 0
+                        
+        .sp-mr
+            margin: 6px 0
+    .display-vid
+        height: 348px
+        border: 6px solid #FFF
+        cursor: pointer
+        position: relative
+        img
+            width: 100%
+            height: 100%
+        .display-vid-icon
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            background: #FFF
+            color: #c30b2a
+            width: 66px
+            height: 66px
+            position: absolute
+            top: 42%
+            left: 42%
+            
+            i
+                font-size: 22px
+                margin: 23px 0 1px 0
+
+// students testmonials
+.stud-test
+    .st-header
+        height: 86px
+        background: url(../imgs/st-icon.png) left no-repeat
+        margin: 30px 0 0 0
+        padding: 20px 0px
+        p
+            font-family: myFirstFont, sans-serif
+            font-size: 30px
+            margin: 5px 0 0 0
+            span
+                color: #c30b2a
+                font-weight: bold
+    .testmonial
+        .testmonial-imgs
+            width: 462px
+            margin: 30px auto
+            .img-one
+                width: 120px
+                height: 120px
+                float: left
+                background: url(../imgs/te-male.jpg) center
+                background-size: cover
+                -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                margin: 20px 0 0 0
+                cursor: pointer
+                opacity: .6
+                transition: all .4s ease-in-out
+                &:hover
+                    opacity: 1
+            .main-img
+                width: 169px
+                height: 169px
+                float: left
+                -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                background: #c30b2a
+                margin: 0 26px 20px 26px
+                .img-two
+                    width: 160px
+                    height: 160px
+                    float: left
+                    background: url(../imgs/student.jpg)
+                    background-size: cover
+                    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                    cursor: pointer
+                    margin: 4.5px
+                    transition: all .4s ease-in-out
+            .test-name
+                width: 60px
+                margin: auto
+                color: #c30b2a
+                font-weight: 900
+                p
+                    font-family: myFirstFont, sans-serif
+                    font-size: 22px
+                    margin: 0
+                    padding: 0
+                i
+                    display: block
+                    margin: -3px
+                    padding: 0
+                        
+            .img-three
+                width: 120px
+                height: 120px
+                float: left
+                background: url(../imgs/te-female.jpg) center
+                background-size: cover
+                -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                margin: 20px 0 0 0
+                cursor: pointer
+                opacity: .6
+                transition: all .4s ease-in-out
+                &:hover
+                    opacity: 1
+        .testmonial-txt
+            width: 80%
+            height: 90px
+            margin: 36px auto 90px
+            padding: 33px 12px
+            border: 1px solid #EEE
+            position: relative
+            .qut-left
+                position: absolute
+                left: -24px
+                bottom: -24px
+                width: 60px
+                height: 66px
+                background: #c30b2a
+                color: #FFF
+                font-size: 20px
+                -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                i
+                    font-size: 26px
+                    margin: 18px 0 0 0
+            p
+                font-family: myFirstFont, sans-serif
+                margin: 0
+                padding: 0
+                display: none
+            .active
+                display: block
+            .qut-right
+                position: absolute
+                top: -24px
+                right: -24px
+                width: 60px
+                height: 66px
+                background: #c30b2a
+                color: #FFF
+                font-size: 20px
+                -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+                i
+                    font-size: 26px
+                    margin: 18px 0 0 0
+
+// quality for you
+.quality
+    width: 100%
+    height: 700px
+    background: url(../imgs/pattern@600px-x.png) center no-repeat
+    background-size: cover
+    position: relative
+    padding: 30px 0
+    .qu-header
+        height: 86px
+        background: url(../imgs/qu-icon.png) left no-repeat
+        padding: 20px 0px
+        margin: 20px 0 80px 0
+        p
+            font-family: myFirstFont, sans-serif
+            font-size: 30px
+            margin: 5px 0 0 0
+            span
+                color: #c30b2a
+                font-weight: bold
+    .img
+        width: 300px
+        height: 700px
+        position: absolute
+        top: 0
+        right: 0
+        img
+            width: 100%
+            height: 100%
+    .owl-carousel
+        .owl-stage-outer
+            margin: 0px 0 30px 0
+            cursor: pointer
+            .owl-item
+                .card
+                    border: none
+                    border-radius: 0
+                    -webkit-box-shadow: 0 10px 6px -6px #777
+                    -moz-box-shadow: 0 10px 6px -6px #777
+                    box-shadow: 0 10px 6px -6px #777
+                    height: 310px
+                    img
+                        border: none
+                        border-radius: 0
+                        height: 70%
+                    .card-body
+                        font-family: myFirstFont, sans-serif
+                        font-size: 13px
+                        line-height: 1.7
+                        padding: 12px 20px
+                        height: 30%
+                    p
+                        font-size: 12px
+                        margin: 0
+                        padding: 6px 0 0 0
+        .owl-dots
+            button
+                span
+                    background: #333
+                    margin: 5px 5px
+            .active
+                span
+                    background: #c30b2a
+                    width: 12px
+                    height: 12px
+
+// blogs
+.blogs
+    .ba-header
+        height: 86px
+        background: url(../imgs/blog-a-icon.png) left no-repeat
+        padding: 20px 0px
+        margin: 90px 0 60px 0
+        p
+            font-family: myFirstFont, sans-serif
+            font-size: 30px
+            margin: 5px 0 0 0
+            span
+                color: #c30b2a
+                font-weight: bold
+    .card
+        border: none
+        border-radius: 0
+        -webkit-box-shadow: 0 3px 6px -6px #999
+        -moz-box-shadow: 0 3px 6px -6px #999
+        box-shadow: 0 3px 6px -6px #999
+        cursor: pointer
+        height: 310px
+        margin: 0 0 25px 0
+        img
+            border: none
+            border-radius: 0
+            height: 70%
+        .card-body
+            font-family: myFirstFont, sans-serif
+            font-size: 13px
+            line-height: 1.7
+            padding: 12px 20px
+            height: 30%
+        p
+            font-size: 12px
+            margin: 0
+            padding: 6px 0 0 0
+    .more-articles
+        width: 210px
+        margin: 60px auto 90px
+        button
+            background: transparent
+            border: 1px solid #c30b2a
+            border-radius: 4px
+            color: #c30b2a
+            font-family: myFirstFont, sans-serif
+            padding: 8px 12px
+            img
+                margin-left: 12px
+
+//contact us
+.contact
+    background: rgb(57,9,9)
+    background: linear-gradient(90deg, rgba(57,9,9,1) 0%, rgba(121,26,50,1) 26%, rgba(205,0,53,1) 100%)
+    .contact-form
+        background: #FFF
+        width: 100%
+        margin: 150px 0 75px 0
+        position: relative
+        .hexagon
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            background: #c30b2a
+            color: #FFF
+            width: 90px
+            height: 100px
+            position: absolute
+            top: -50px
+            left: calc(50% - 45px)
+            img
+                width: 38px
+                height: 38px
+                margin: 28px 26px 0 25px
+        .contact-header
+            padding: 66px 0 6px 0
+            h3
+                margin: 0
+                font-family: myFirstFont, sans-serif
+                font-weight: 900
+                color: #dc0032
+                span
+                    font-weight: normal
+                    color: #000
+            .span
+                font-size: 20px
+                font-weight: bold
+                display: block
+                margin-top: -6px
+        form
+            font-family: myFirstFont, sans-serif
+            padding: 2px 0 0 12px
+            input
+                height: 50px
+                margin: 0 0 5px 0
+                padding: 1.25rem .75rem
+                border: 1px solid #EEE
+                &::placeholder
+                    color: #999
+            textarea
+                padding: .725rem .75rem
+                border: 1px solid #EEE
+                height: 145px
+                resize: none
+                overflow: hidden
+                &::placeholder
+                    color: #999
+            button
+                display: block
+                width: 120px
+                margin: 25px auto
+                padding: 0.660rem .75rem 0.600rem
+                font-family: myFirstFont, sans-serif
+                font-size: 18px
+        .contact-info
+            padding: 0 20px 0 0
+            .info
+                font-family: myFirstFontf, sans-serif
+                font-size: 16px
+                margin: 0 0 12px 0
+                i
+                    width: 30px
+                    color: #dc0032
+            .location
+                width: 100%
+                height: 210px
+                margin-top: 16px
+                iframe
+                    width: 250px
+                    height: 200px
+    
+    .contact-list
+        margin: 150px 0 75px 0
+        .list
+            ul
+                width: 88%
+                a
+                    color: #f6f6f6
+                    &:hover
+                        color: #f2f2f2
+                        text-decoration: none
+                li
+                    font-size: 16px
+                    transition: all .25s ease-in-out
+                    margin: 0 0 6px 0
+                    padding: 7px 10px 2px
+                    &:hover
+                        background: #c30b2a
+                    i
+                        display: block
+                        width: 18px
+                        float: right
+                        margin: 3px 0 0 0
+                .active
+                    background: #c30b2a
+        .line
+            height: 10px
+            margin: 50px 0
+            .span
+                display: block
+                width: 60px
+                height: 2px
+                background: #FFF
+                span
+                    display: block
+                    width: 0
+                    height: 0
+                    border: 5px solid transparent
+                    border-bottom-color: #FFF
+                    position: relative
+                    top: -9px
+                    left: -1px
+                  
+                    &:after
+                      content: ''
+                      position: absolute
+                      left: -5px
+                      top: 5px
+                      width: 0
+                      height: 0
+                      border: 5px solid transparent
+                      border-top-color: #FFF
+        .icons
+            .hexagon
+                float: left
+                position: relative
+                width: 39px
+                height: 23.09px
+                color: #FFF
+                background-color: transparent
+                margin: 11.55px 5px
+                border-left: solid 2px #ffffff
+                border-right: solid 1px #ffffff
+                transition: all .0s ease-in-out
+              
+                &:before, &:after
+                  content: ""
+                  position: absolute
+                  z-index: 1
+                  width: 28.28px
+                  height: 28.28px
+                  -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                  -ms-transform: scaleY(0.5774) rotate(-45deg)
+                  transform: scaleY(0.5774) rotate(-45deg)
+                  background-color: inherit
+                  left: 3.8579px
+              
+                &:before
+                  top: -14.1421px
+                  border-top: solid 1.8284px #ffffff
+                  border-right: solid 1.8284px #ffffff
+              
+                &:after
+                  bottom: -14.1421px
+                  border-bottom: solid 1.8284px #ffffff
+                  border-left: solid 1.8284px #ffffff
+                  
+                &:hover
+                    background-color: #FFF
+                    i
+                        color: #c30b2a
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 36px
+                i
+                    font-size: 18px
+                    margin: 3px 2px 0 0
+                    color: #FFF
+                    z-index: 999
+
+//copyrights
+.copyrights
+    padding: 16px 0 0 0
+    .left
+    .right
+        span
+            margin: 0 12px
+            img
+                margin: 0 2px
+
+
+
+// media
+
+@media (max-width: 1200px)
+    // navbar
+    .upper-nav
+        height: 40px
+        .overlay
+            padding: 10px 0
+        .left
+            font-size: 13px
+    // header
+    .header
+        height: 490px
+        .nav
+            height: 60px
+            ul
+                font-size: 11px
+                li
+                    margin: 0 11px
+                    padding: 17px 0
+                    img
+                        width: 100%
+                        height: 100%
+                        margin: -5px 0 0 0
+                .sp-li
+                    padding: 25px 0
+                .home
+                    background: #c30b2a
+                    padding: 16px 13px
+                    .home-icon
+                        display: block
+                        padding: 0 0 5px 0
+                .search
+                    margin: 0 0 0 90px
+                    
+        .intro
+            h1
+                font-size: 45px
+            h3
+                font-size: 35px
+            p
+                font-size: 16px
+            button
+                width: 110px
+                height: 40px
+        .doc
+            &-img
+                width: 209px
+                height: 280px
+    
+    //banner
+    .banner
+        margin: 66px auto
+        width: 100%
+        height: 300px
+        overflow: hidden
+        img 
+            width: 100%
+            height: 100%
+    //best article
+    .best-article
+        .ba-header
+            p
+                font-size: 26px
+        
+        .cel
+            img
+                width: 100%
+                height: 260px
+            .overlay
+                .read-more
+                    width: 66%
+                    margin: 66px auto 0
+                    .hexagon
+                    button
+                        width: 100%
+                        height: 44px
+                        margin: 30px 0
+                        padding: 6px 0 0 0
+            .title
+                height: 60px
+                padding: 12px 8px
+                p
+                    font-size: 12px
+        .more-articles
+            button
+        .controls-top
+            .btn-left
+                left: -30px
+            .btn-right
+                right: -30px
+    
+    //videos
+    .videos
+        padding: 45px 0 55px 0
+        .uv-header
+            p
+                font-size: 26px
+        .uv-disc
+            margin: 10px 0 20px 0
+            p
+                font-size: 16px
+        .list-vids
+            .scroll-line
+                left: -12px
+                span
+            .listed-vid
+                height: 102px
+                .img
+                    width: 24%
+                    height: 100%
+                    .overlay
+                        .vid-icons
+                            width: 80%
+                            .hexagon
+                .vid-detail
+                    p
+                        font-size: 14px
+                    .play-line
+                        span
+                    .min-detail
+                        font-size: 10px
+                        
+                            
+            .sp-mr
+                margin: 6px 0
+        .display-vid
+            height: 316px
+            .display-vid-icon
+                top: 38%
+                left: 38%
+    
+    // students testmonials
+    .stud-test
+        .st-header
+            p
+                font-size: 26px
+                margin: 5px 0 0 0
+        .testmonial
+            .testmonial-imgs
+                width: 462px
+                margin: 30px auto
+                .img-one
+                .main-img
+                    .img-two
+                .test-name 
+                .img-three
+            .testmonial-txt
+                width: 88%
+                height: 90px
+                margin: 36px auto 90px
+                padding: 33px 12px
+                .qut-left
+                p
+                    font-size: 16px
+                .qut-right
+    
+    // quality for you
+    .quality
+        .qu-header
+            p
+                font-size: 26px
+                span
+                    color: #c30b2a
+                    font-weight: bold
+        .img
+            width: 300px
+            height: 700px
+            position: absolute
+            top: 0
+            right: 0
+        
+    
+    // blogs
+    .blogs
+        .ba-header
+            p
+                font-size: 26px
+                margin: 5px 0 0 0
+        .card
+            height: 260px
+            img
+            .card-body
+                p
+                    font-size: 10px
+        .more-articles
+            width: 210px
+            margin: 60px auto 90px
+    
+    //contact us
+    .contact
+@media (max-width: 992px)
+    // navbar
+    .upper-nav
+        height: 30px
+        font-size: 10px
+        .overlay
+            padding: 4px 0
+        .left
+            > :last-child
+                margin: 0 10px
+            font-size: 10px
+            margin: 4px 0 0 0
+            img
+                width: 12px
+                height: 14px
+        .right
+            img
+                width: 15px
+                height: 15px
+    // header
+    .header
+        height: 366px
+        .nav
+            height: 45px
+            ul
+                font-size: 9px
+                li
+                    margin: 0 8px
+                    padding: 17px 0
+                    img
+                        width: 100%
+                        height: 100%
+                        margin: -5px 0 0 0
+                .nav-logo
+                    width: 165px
+                .sp-li
+                    padding: 18px 0
+                .home
+                    padding: 9px 7px
+                    .home-icon
+                        display: block
+                        padding: 0 0 5px 0
+                .search
+                    margin: 0 0 0 80px
+                    
+        .intro
+            h1
+                font-size: 30px
+            h3
+                font-size: 25px
+            p
+                font-size: 12px
+                margin-bottom: 28px
+            button
+                width: 90px
+                height: 30px
+                font-size: 12px
+        .doc
+            &-img
+                width: 150px
+                height: 200px
+    
+    //banner
+    .banner
+        margin: 66px auto
+        width: 100%
+        height: 250px
+    //best article
+    .best-article
+        .ba-header
+            p
+                font-size: 26px
+        
+        .cel
+            img
+                width: 100%
+                height: 200px
+            .overlay
+                .read-more
+                    width: 60%
+                    margin: 50px auto 0
+                    .hexagon
+                            float: left
+                            position: relative
+                            width: 25px
+                            height: 14.43px
+                            background-color: transparent
+                            margin: 7.22px 2px
+                            border-left: solid 2px #FFF
+                            border-right: solid 2px #FFF
+                          
+                            &:before, &:after
+                              content: ""
+                              position: absolute
+                              z-index: 1
+                              width: 17.68px
+                              height: 17.68px
+                              -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                              -ms-transform: scaleY(0.5774) rotate(-45deg)
+                              transform: scaleY(0.5774) rotate(-45deg)
+                              background-color: inherit
+                              left: 1.6612px
+                          
+                            &:before
+                              top: -8.8388px
+                              border-top: solid 2.8284px #FFF
+                              border-right: solid 2.8284px #FFF
+                          
+                            &:after
+                              bottom: -8.8388px
+                              border-bottom: solid 2.8284px #FFF
+                              border-left: solid 2.8284px #FFF
+                            &:hover
+                                background-color: #FFF
+                                i
+                                    color: #c30b2a
+                                    position: absolute
+                                    top: 3px
+                                    left: 0px
+                                    width: 20px
+                                    z-index: 999
+                            i
+                                font-size: 12px
+                                position: absolute
+                                top: 3px
+                                left: 0
+                                width: 20px
+                    button
+                        width: 90%
+                        height: 33px
+                        margin: 16px 0
+                        padding: 6px 0 0 0
+                        font-size: 12px
+            .title
+                height: 40px
+                padding: 12px 8px
+                p
+                    font-size: 8px
+        .more-articles
+            width: 170px
+            margin: 50px auto
+            button
+                font-size: 12px
+                padding: 6px 12px
+                img
+                    width: 15px
+                    height: 15px
+    
+    //videos
+    .videos
+        padding: 45px 0 55px 0
+        .uv-header
+            p
+                font-size: 26px
+        .uv-disc
+            margin: 10px 0 20px 0
+            p
+                font-size: 14px
+        .list-vids
+            .scroll-line
+                left: -16px
+                span
+            .listed-vid
+                height: 90px
+                .img
+                    width: 24%
+                    height: 100%
+                    .overlay
+                        .vid-icons
+                            width: 100%
+                            .hexagon
+                                margin: 7.22px 1px
+                .vid-detail
+                    p
+                        font-size: 12px
+                    .play-line
+                        margin: 6px 0 16px 0
+                        span
+                    .min-detail
+                        font-size: 10px
+                        
+                            
+            .sp-mr
+                margin: 6px 0
+        .display-vid
+            height: 280px
+            .display-vid-icon
+                top: 36%
+                left: 35%
+    
+    // students testmonials
+    .stud-test
+        .st-header
+            p
+                font-size: 26px
+                margin: 5px 0 0 0
+        .testmonial
+            .testmonial-imgs
+                width: 402px
+                margin: 30px auto
+                .img-one
+                    width: 100px
+                    height: 100px
+                .main-img
+                    width: 149px
+                    height: 149px
+                    .img-two
+                        width: 140px
+                        height: 140px
+                .test-name 
+                .img-three
+                    width: 100px
+                    height: 100px
+            .testmonial-txt
+                width: 88%
+                height: 90px
+                margin: 36px auto 90px
+                padding: 33px 12px
+                .qut-left
+                p
+                    font-size: 14px
+                .qut-right
+    
+    // quality for you
+    .quality
+        .qu-header
+            p
+                font-size: 26px
+        .img
+            width: 200px
+            height: 600px
+            position: absolute
+            top: 10px
+            right: 0
+        .owl-carousel
+            .owl-stage-outer
+                .owl-item
+                    .card
+                        height: 260px
+                        p
+                            font-size: 10px
+                            padding: 0
+        
+    
+    // blogs
+    .blogs
+        .ba-header
+            margin: 0 0 60px 0
+            p
+                font-size: 26px
+                margin: 5px 0 0 0
+        .card
+            height: 200px
+            img
+            .card-body
+                p
+                    font-size: 6px
+        .more-articles
+            width: 170px
+            margin: 50px auto
+            button
+                font-size: 12px
+                padding: 6px 12px
+                img
+                    width: 15px
+                    height: 15px
+    
+    //contact us
+    .contact
+        .col-md-1
+            display: none
+        .contact-form
+            margin: 120px 0 75px 0
+            position: relative
+            .hexagon
+                img
+            .contact-header
+                h3
+                    font-size: 26px
+            form
+                input
+                    height: 40px
+                textarea
+                button
+                    width: 100px
+                    height: 40px
+                    font-size: 16px
+            .contact-info
+                padding: 0 20px 0 0
+                .info
+                    font-family: myFirstFontf, sans-serif
+                    font-size: 11px
+                    margin: 0 0 5px 0
+                    i
+                        width: 12px
+                        color: #dc0032
+                .location
+                    iframe
+                        width: 250px
+                        height: 200px
+        
+        .contact-list
+            margin: 120px 0 75px 0
+            .list
+                ul
+                    width: 90%
+                    li
+                        font-size: 15px
+                        i
+                            margin: 1px 0 0 0
+            .line
+                margin: 40px 0
+    
+    //copyrights
+    .copyrights
+        font-size: 12px
+
+@media (max-width: 767px)
+    // navbar
+    .upper-nav
+        .overlay
+        .left
+        .right
+            .mark
+                margin: 0 0 0 6px
+    // header
+    .header
+        height: 290px
+        .nav
+            height: 40px
+            ul
+                font-size: 7px
+                li
+                    margin: 0 5px
+                    padding: 15px 0
+                    img
+                        margin: -4px 0 0 0
+                        padding: 0 6px
+                .nav-logo
+                    width: 150px
+                .sp-li
+                    padding: 17px 0
+                .home
+                    padding: 9px 7px
+                    .home-icon
+                        display: block
+                        padding: 0 0 5px 0
+                .search
+                    margin: 0 0 0 30px
+                    
+        .intro
+            h1
+                font-size: 23px
+            h3
+                font-size: 19px
+            p
+                font-size: 8px
+                margin-bottom: 18px
+            button
+                width: 80px
+                height: 25px
+                font-size: 10px
+        .doc
+            &-img
+                width: 100%
+                height: 135px
+    
+    //banner
+    .banner
+        margin: 66px auto
+        width: 100%
+        height: 190px
+    //best article
+    .best-article
+        .ba-header
+            p
+                font-size: 26px
+        
+        .cel
+            img
+                height: auto
+            .overlay
+                .read-more
+                    width: 44%
+                    margin: 66px auto 0
+                    .hexagon
+                        float: left
+                        position: relative
+                        width: 40px
+                        height: 23.09px
+                        background-color: transparent
+                        margin: 11.55px 5px
+                        border-left: solid 2px #ffffff
+                        border-right: solid 2px #ffffff
+                        transition: all .0s ease-in-out
+                      
+                        &:before, &:after
+                          content: ""
+                          position: absolute
+                          z-index: 1
+                          width: 28.28px
+                          height: 28.28px
+                          -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                          -ms-transform: scaleY(0.5774) rotate(-45deg)
+                          transform: scaleY(0.5774) rotate(-45deg)
+                          background-color: inherit
+                          left: 3.8579px
+                      
+                        &:before
+                          top: -14.1421px
+                          border-top: solid 2.8284px #ffffff
+                          border-right: solid 2.8284px #ffffff
+                      
+                        &:after
+                          bottom: -14.1421px
+                          border-bottom: solid 2.8284px #ffffff
+                          border-left: solid 2.8284px #ffffff
+                          
+                        &:hover
+                            background-color: #FFF
+                            position: relative
+                            i
+                                color: #c30b2a
+                                position: absolute
+                                top: 1px
+                                left: 0px
+                                width: 36px
+                                z-index: 999
+                        i
+                            font-size: 19px
+                            color: #FFF
+                            position: absolute
+                            top: 1px
+                            left: 0px
+                            width: 36px
+                            z-index: 999
+                    button
+                        width: 90%
+                        height: 33px
+                        margin: 16px 0
+                        padding: 6px 0 0 0
+                        font-size: 12px
+            .title
+                height: 70px
+                padding: 12px 8px
+                p
+                    font-size: 13px
+        .more-articles
+            width: 180px
+            margin: 50px auto
+            button
+                font-size: 13px
+                padding: 6px 12px
+                img
+                    width: 15px
+                    height: 15px
+    
+    //videos
+    .videos
+        .uv-header
+        .uv-disc
+        .list-vids
+            .scroll-line
+                left: -16px
+                span
+            .listed-vid
+                height: 90px
+                .img
+                    width: 24%
+                    height: 100%
+                    .overlay
+                        .vid-icons
+                            width: 100%
+                            .hexagon
+                                margin: 7.22px 1px
+                .vid-detail
+                    .play-line
+                    .min-detail
+                        
+                            
+            .sp-mr
+                margin: 6px 0
+        .display-vid
+            height: 280px
+            margin: 20px 0
+            .display-vid-icon
+                top: 40%
+                left: 42%
+    
+    // students testmonials
+    .stud-test
+        .st-header
+        .testmonial
+            .testmonial-imgs
+                .img-one
+                .main-img
+                    .img-two
+                .test-name 
+                .img-three
+            .testmonial-txt
+                .qut-left
+                p
+                    font-size: 10px
+                .qut-right
+    
+    // quality for you
+    .quality
+        .qu-header
+        .img
+            width: 200px
+            height: 600px
+            position: absolute
+            top: 10px
+            right: 0
+        .owl-carousel
+            .owl-stage-outer
+                .owl-item
+                    .card
+                        height: 210px
+                        .card-body
+                            padding: 16px 20px
+                        p
+                            font-size: 6px
+                            padding: 0
+        
+    
+    // blogs
+    .blogs
+        .ba-header
+        .card
+            height: 390px
+            img
+            .card-body
+                p
+                    font-size: 6px
+        .more-articles
+            width: 180px
+            margin: 50px auto
+            button
+                font-size: 13px
+                padding: 6px 12px
+                img
+                    width: 15px
+                    height: 15px
+    
+    //contact us
+    .contact
+        .col-md-1
+            display: none
+        .contact-form
+            margin: 120px 0 75px 0
+            position: relative
+            .hexagon
+            .contact-header
+            form
+                padding: 2px 12px 0 12px
+            .contact-info
+                padding: 26px 20px 20px 20px
+                .info
+                    font-size: 18px
+                    margin: 0 0 5px 0
+                    i
+                        width: 26px
+                        color: #dc0032
+                .location
+                    iframe
+                        width: 350px
+                        height: 300px
+        
+        .contact-list
+            width: 70%
+            margin: 0px auto 90px auto
+            .list
+                ul
+                    li
+                        font-size: 14px
+                        i
+                            margin: 1px 0 0 0
+            .line
+                margin: 10px 0
+    
+    //copyrights
+    .copyrights
+        font-size: 7px
+        .right
+            img
+                width: 12px
+                height: 12px
+
+@media (max-width: 480px)
+    // navbar
+    .upper-nav
+        font-size: 8px
+        .overlay
+            padding: 5px 0
+        .left
+            font-size: 8px
+        .right
+            i
+                margin: 0 6px
+            .mark
+                margin: 0 0 0 6px
+                img
+                    width: 12px
+                    height: 12px
+    // header
+    .header
+        height: 260px
+        .nav
+            height: 30px
+            ul
+                font-size: 5px
+                li
+                    margin: 0
+                    padding: 13px 5px
+                    img
+                        margin: -4px 0 0 0
+                        padding: 0 6px
+                .nav-logo
+                    width: 135px
+                .sp-li
+                    margin: 0
+                    padding: 13px 4px
+                .home
+                    padding: 9px 7px
+                    .home-icon
+                        display: block
+                        padding: 0 0 5px 0
+                .search
+                    margin: 0 0 0 10px
+                    
+        .intro
+            h1
+                font-size: 21px
+            h3
+                font-size: 18px
+            p
+                font-size: 7px
+                margin-bottom: 16px
+            button
+                width: 60px
+                height: 20px
+                font-size: 8px
+        .doc
+            &-img
+                width: 100px
+                height: 120px
+                display: none
+    
+    //banner
+    .banner
+        margin: 10px auto 30px
+        width: 100%
+        height: 120px
+    //best article
+    .best-article
+        .ba-header
+        .cel
+            img
+                height: auto
+            .overlay
+                .read-more
+                    width: 60%
+                    margin: 50px auto 0
+                    .hexagon
+                        float: left
+                        position: relative
+                        width: 40px
+                        height: 23.09px
+                        background-color: transparent
+                        margin: 11.55px 5px
+                        border-left: solid 2px #ffffff
+                        border-right: solid 2px #ffffff
+                        transition: all .0s ease-in-out
+                      
+                        &:before, &:after
+                          content: ""
+                          position: absolute
+                          z-index: 1
+                          width: 28.28px
+                          height: 28.28px
+                          -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                          -ms-transform: scaleY(0.5774) rotate(-45deg)
+                          transform: scaleY(0.5774) rotate(-45deg)
+                          background-color: inherit
+                          left: 3.8579px
+                      
+                        &:before
+                          top: -14.1421px
+                          border-top: solid 2.8284px #ffffff
+                          border-right: solid 2.8284px #ffffff
+                      
+                        &:after
+                          bottom: -14.1421px
+                          border-bottom: solid 2.8284px #ffffff
+                          border-left: solid 2.8284px #ffffff
+                          
+                        &:hover
+                            background-color: #FFF
+                            position: relative
+                            i
+                                color: #c30b2a
+                                position: absolute
+                                top: 1px
+                                left: 0px
+                                width: 36px
+                                z-index: 999
+                        i
+                            font-size: 19px
+                            color: #FFF
+                            position: absolute
+                            top: 1px
+                            left: 0px
+                            width: 36px
+                            z-index: 999
+                    button
+                        width: 90%
+                        height: 33px
+                        margin: 16px 0
+                        padding: 5px 0 0 0
+                        font-size: 12px
+            .title
+                height: 60px
+                padding: 12px 8px
+                p
+                    font-size: 14px
+        .controls-top
+            .btn-left
+                left: -20px
+            .btn-right
+                right: -20px
+    
+    //videos
+    .videos
+        .uv-header
+        .uv-disc
+            p
+                font-size: 12px
+        .list-vids
+            .scroll-line
+                left: -8px
+                span
+            .listed-vid
+                height: 84px
+                .img
+                    width: 25%
+                    .overlay
+                        .vid-icons
+                            width: 77%
+                            .hexagon
+                                position: relative
+                                width: 15px
+                                height: 9.24px
+                                background-color: transparent
+                                margin: 4.62px 1px
+                                box-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
+                                border-left: solid 2px #FFF
+                                border-right: solid 2px #FFF
+                              
+                                &:before, &:after
+                                  content: ""
+                                  position: absolute
+                                  z-index: 1
+                                  width: 11.31px
+                                  height: 11.31px
+                                  -webkit-transform: scaleY(0.5774) rotate(-45deg)
+                                  -ms-transform: scaleY(0.5774) rotate(-45deg)
+                                  transform: scaleY(0.5774) rotate(-45deg)
+                                  background-color: inherit
+                                  left: 0.3431px
+                                  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
+                              
+                                &:before
+                                  top: -5.6569px
+                                  border-top: solid 2.8284px #FFF
+                                  border-right: solid 2.8284px #FFF
+                              
+                                &:after
+                                  bottom: -5.6569px
+                                  border-bottom: solid 2.8284px #FFF
+                                  border-left: solid 2.8284px #FFF
+                              
+                                span
+                                  display: block
+                                  position: absolute
+                                  top: 1.1547005383792515px
+                                  left: 0
+                                  width: 12px
+                                  height: 6.9282px
+                                  z-index: 2
+                                  background: inherit
+                                i
+                                    //color: #c30b2a
+                                    color: #FFF
+                                    font-size: 5px
+                                    width: 12px
+                                    position: absolute
+                                    top: 2px
+                                    left: 0
+
+                .vid-detail
+                    p
+                        font-size: 10px
+                    .play-line
+                    .min-detail
+                        font-size: 9px
+                        span
+                            i
+                                padding: 0 3px 0 0
+                            
+            .sp-mr
+                margin: 6px 0
+        .display-vid
+            height: 290px
+            margin: 20px 0
+            .display-vid-icon
+                top: 40%
+                left: 42%
+    
+    // students testmonials
+    .stud-test
+        .st-header
+        .testmonial
+            .testmonial-imgs
+                width: 256px
+                margin: 30px auto 0
+                .img-one
+                    width: 60px
+                    height: 60px
+                .main-img
+                    width: 99px
+                    height: 99px
+                    margin: 0 16px 9px 16px
+                    .img-two
+                        width: 90px
+                        height: 90px
+                .test-name
+                    p
+                        font-size: 16px
+                .img-three
+                    width: 60px
+                    height: 60px
+            .testmonial-txt
+                width: 88%
+                height: 60px
+                margin: 16px auto 90px
+                padding: 24px 12px
+                .qut-left
+                    width: 50px
+                    height: 56px
+                    i
+                        font-size: 20px
+                p
+                    font-size: 7px
+                .qut-right
+                    width: 50px
+                    height: 56px
+                    i
+                        font-size: 20px
+    
+    // quality for you
+    .quality
+        .qu-header
+        .img
+            width: 200px
+            height: 600px
+            position: absolute
+            top: 10px
+            right: 0
+        .owl-carousel
+            .owl-stage-outer
+                .owl-item
+                    .card
+                        height: 360px
+                        .card-body
+                            padding: 12px 20px
+                        p
+                            font-size: 18px
+                            padding: 0
+        
+    
+    // blogs
+    .blogs
+        .ba-header
+        .card
+            height: 390px
+            img
+            .card-body
+                p
+                    font-size: 18px
+        .more-articles
+            width: 180px
+            margin: 50px auto
+            button
+                font-size: 13px
+                padding: 6px 12px
+                img
+                    width: 15px
+                    height: 15px
+    
+    //contact us
+    .contact
+        .col-md-1
+            display: none
+        .contact-form
+            margin: 120px 0 75px 0
+            position: relative
+            .hexagon
+            .contact-header
+            form
+                padding: 2px 12px 0 12px
+            .contact-info
+                padding: 26px 20px 20px 20px
+                .info
+                    font-size: 18px
+                    margin: 0 0 5px 0
+                    i
+                        width: 26px
+                        color: #dc0032
+                .location
+                    iframe
+                        width: 350px
+                        height: 300px
+        
+        .contact-list
+            width: 70%
+            margin: 0px auto 120px auto
+            .list
+                ul
+                    li
+                        font-size: 14px
+                        i
+                            margin: 1px 0 0 0
+            .line
+                margin: 10px 0
+    
+    //copyrights
+    .copyrights
+        font-size: 6px
+        .left
+        .right
+            text-align: left
+            img
+                width: 12px
+                height: 12px
+
+
+
+@media (max-width: 375px)
+    .header
+        height: 260px
+        .nav
+            height: 30px
+            ul
+                font-size: 4px
+                li
+                    margin: 0
+                    padding: 13px 3px
+                    img
+                        margin: -5px 0 0 0
+                        padding: 0 6px
+                .nav-logo
+                    width: 123px
+                .sp-li
+                    margin: 0
+                    padding: 13px 4px
+                .search
+                    margin: 0 0 0 7px
+    //banner
+    .banner
+        height: 110px
+    //best article
+    .best-article
+        .ba-header
+        .cel
+            img
+                height: auto
+            .overlay
+                .read-more
+                    width: 70%
+                    margin: 30px auto 0
+                    .hexagon
+                        margin: 11.55px 5px
+            .title
+                height: 55px
+                padding: 12px 8px
+                p
+                    font-size: 12px
+    
+    //videos
+    .videos
+        .uv-header
+        .uv-disc
+            p
+                font-size: 10px
+        .list-vids
+            .scroll-line
+                left: -8px
+                span
+            .listed-vid
+                height: 80px
+                .img
+                    .overlay
+                        .vid-icons
+                            width: 85%
+                            .hexagon
+            .display-vid-icon
+                top: 40%
+                left: 40%
+    
+    // students testmonials
+    .stud-test
+    
+    // quality for you
+    .quality
+    
+    // blogs
+    .blogs
+    
+    //contact us
+    .contact
+        .contact-form
+            margin: 120px 0 60px 0
+            form
+                padding: 2px 16px 0 16px
+        
+        .contact-list
+    
+    //copyrights
+    .copyrights
+        font-size: 6px
+        .left
+        .right
+            text-align: left
+            img
+                width: 12px
+                height: 12px
+
+@media (max-width: 320px)
+    .upper-nav
+        .left
+            img
+                width: 10px
+                height: 12px
+    .header
+        height: 260px
+        .nav
+            height: 30px
+            ul
+                font-size: 4px
+                li
+                    margin: 0
+                    padding: 13px 1px
+                    img
+                        margin: -3px 0 0 0
+                        padding: 0 3px
+                .nav-logo
+                    width: 100px
+                .sp-li
+                    margin: 0
+                    padding: 13px 3px
+                .search
+                    margin: 0 0 0 2px
+    //banner
+    .banner
+        height: 90px
+    //best article
+    .best-article
+        .ba-header
+        .cel
+            img
+                height: auto
+            .overlay
+                .read-more
+                    width: 80%
+                    margin: 20px auto 0
+                    .hexagon
+                        margin: 11.55px 5px
+            .title
+                height: 45px
+                padding: 12px 8px
+    
+    //videos
+    .videos
+        .uv-header
+        .uv-disc
+            p
+                font-size: 10px
+        .list-vids
+            .scroll-line
+                left: -8px
+                span
+            .listed-vid
+                height: 80px
+                .img
+                    .overlay
+                        .vid-icons
+                            width: 96%
+                            .hexagon
+            .display-vid-icon
+                top: 38%
+                left: 39%
+    
+    // students testmonials
+    .stud-test
+        .testmonial
+            .testmonial-txt
+                p
+                    font-size: 5px
+    
+    // quality for you
+    .quality
+        .owl-carousel
+            .owl-stage-outer
+                .owl-item
+                    .card
+                        .card-body
+                            padding: 18px 20px
+                        p
+                            font-size: 14px
+                            padding: 0
+    // blogs
+    .blogs
+        .card
+            .card-body
+                padding: 18px 20px
+                p
+                    font-size: 14px
+    //contact us
+    .contact
+        .contact-form
+            margin: 120px 0 60px 0
+            form
+                padding: 2px 16px 0 16px
+        
+        .contact-list
+    
+    //copyrights
+    .copyrights
+        font-size: 6px
+        .left
+        .right
+            text-align: left
+            img
+                width: 12px
+                height: 12px
