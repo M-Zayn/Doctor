@@ -112,7 +112,9 @@ $(document).ready(function(){
                
            }
         
-            
+            $("#popup").on("click", function() {
+        
+             $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto"});
         
         });
     
