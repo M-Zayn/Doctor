@@ -97,9 +97,9 @@ head
         .col-md-3.wow.slideInRight(data-wow-duration='1.2s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
           .doc
             .doc-img
-              img.img-responsive(src='imgs/layer-3.png')
+              img.img-responsive(src='imgs/Layer-3.png')
   // banner
-  .banner(data-toggle='modal' data-target='#exampleModalLong')
+  .banner#popup(data-toggle='modal' data-target='#exampleModalLong')
     a(href='#')
       img.img-responsive(src='imgs/amro banner.jpg')
   .sm-banner
@@ -107,7 +107,7 @@ head
       img(src='imgs/book.png')
     .img-two
       img(src='imgs/how-to.png')
-    .img-three(data-toggle='modal' data-target='#exampleModalLong')
+    .img-three#popup(data-toggle='modal' data-target='#exampleModalLong')
       img(src='imgs/btn.png')
   #exampleModalLong.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
     .modal-dialog(role='document')
