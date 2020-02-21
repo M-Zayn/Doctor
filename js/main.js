@@ -2,7 +2,31 @@
 $(document).ready(function(){
     
     new WOW().init();
-      $('.owl-carousel').owlCarousel({
+    
+    $('.owl-carousel-one').owlCarousel({
+          loop: true,
+          margin: 30,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            100: {
+              items: 1
+            },
+            700: {
+              items: 2
+            },
+            1000: {
+              items: 3
+            }
+          }
+        });
+    
+    $('.owl-carousel').owlCarousel({
           loop: true,
           margin: 30,
           nav: false,
@@ -12,8 +36,11 @@ $(document).ready(function(){
             0: {
               items: 1
             },
-            600: {
-              items: 3
+            100: {
+              items: 1
+            },
+            700: {
+              items: 2
             },
             1000: {
               items: 4
