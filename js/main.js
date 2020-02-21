@@ -132,7 +132,7 @@ $(document).ready(function(){
         $(".modal").css({"display": "none", "opacity":"0", "overflow":"auto"});
         $(".modal-dialog").css({"display": "none", "opacity":"0", "overflow":"auto"});
     });
-    
+    $('.dropdown-toggle').dropdown()
     
 });
 
