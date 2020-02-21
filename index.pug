@@ -1,639 +1,812 @@
 doctype html
-html(lang="en")
-      head
-            meta(charset="utf-8")
-            meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
-            meta(http-equiv="X-UA-Compatible", content="ie=edge")
-            meta(name="description", content="Hi, I’m M.Zayn , I'm a Front-End")
-            link(rel="shortcut icon", href="#")
-            title Dr.Amr El-Esaadany
-            link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
-            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css")
-            link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
-            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
-            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css")
-            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
-            link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.1/css/all.css", integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf", crossorigin="anonymous")
-            link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato&display=swap')
-            link(rel="stylesheet", href="css/style.css")
-            
-            
-            // navbar
-            .upper-nav
-                .overlay
-                    .container
-                        .left
-                            a(href="#")
-                                img.img-responsive(src="imgs/icon/log-icon.png") 
-                                span Login
-                                i.fa.fa-sort-down
-                            a(href="#")
-                                img.img-responsive(src="imgs/icon/stuff-icon.png") 
-                                span StuffMail
-                        .right
-                            a(href="#"): i.fab.fa-facebook-f
-                            a(href="#"): i.fab.fa-twitter
-                            a(href="#"): i.fab.fa-youtube
-                            a(href="#"): i.fab.fa-google-plus-g
-                            .mark
-                                img.img-responsive(src="imgs/icon/mark-icon.png")
-                        .clearfix
-            // header
-            .header
-                .container
-                    .nav(class="wow fadeInUp", data-wow-duration=".50s", data-wow-delay="0", data-wow-offset="0", data-wow-iteration="1")
-                        ul.list-unstyled.text-center
-                            li.nav-logo
-                                img.img-responsive(src="imgs/logo.png")
-                            li.home
-                                i.fa.fa-home.home-icon
-                                span: a(href="#") Home
-                            li.sp-li: a(href="#") About Me
-                            li.sp-li: a(href="#") Form
-                            li.sp-li: a(href="#") Laboratory
-                            li.sp-li: a(href="#") Healthcare Quality
-                            li.sp-li: a(href="#") Contact Us
-                            li.sp-li
-                                a(href="#"): i.fa.fa-ellipsis-h
-                            li.sp-li.search
-                                a(href="#"): i.fa.fa-search
-                        .clearfix
-                    .row
-                        .col-md-9.col-sm-9(class="wow fadeInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="0", data-wow-iteration="1")
-                            .intro
-                                h1 Hello ,,
-                                h3 I'm Dr. Amr Elsadany
-                                p.lead Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-                                button Read More
-                        .col-md-3.col-sm-3(class="wow slideInRight", data-wow-duration="1.2s", data-wow-delay="0", data-wow-offset="0", data-wow-iteration="1")
-                            .doc
-                                .doc-img
-                                    img.img-responsive(src="imgs/layer-3.png")
-            
-            
-            //banner
-            .banner
-                a(href="#"): img.img-responsive(src="imgs/amro banner.jpg")
-            
-            
-            .best-article
-                .container
-                    .ba-header(class="wow slideInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        p
-                            span Best 
-                            | Article
-                    .container.my-4(class="wow slideInUp", data-wow-duration="1.5s", data-wow-delay="0", data-wow-offset="0", data-wow-iteration="1")
-                          // Carousel Wrapper
-                          #multi-item-example.carousel.slide.carousel-multi-item(data-ride='carousel')
-                            // Controls
-                            .controls-top
-                              a.btn-floating.btn-left(href='#multi-item-example' data-slide='prev')
-                                i.fa.fa-chevron-left
-                              a.btn-floating.btn-right(href='#multi-item-example' data-slide='next')
-                                i.fa.fa-chevron-right
-                            // /.Controls
-                            // Indicators
-                            //ol.carousel-indicators
-                              li.active(data-target='#multi-item-example' data-slide-to='0')
-                              li(data-target='#multi-item-example' data-slide-to='1')
-                              li(data-target='#multi-item-example' data-slide-to='2')
-                            // /.Indicators
-                            // Slides
-                            .carousel-inner(role='listbox')
-                              // First slide
-                              .carousel-item.active
-                                .row
-                                  .col-md-4
-                                    .cel
-                                        img.img-responsive(src="imgs/biology.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                                  .col-md-4.clearfix.d-none.d-md-block
-                                    .cel
-                                        img.img-responsive(src="imgs/biology.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                                  .col-md-4.clearfix.d-none.d-md-block
-                                    .cel
-                                        img.img-responsive(src="imgs/binoculars.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                              // /.First slide
-                              // Second slide
-                              .carousel-item
-                                .row
-                                  .col-md-4
-                                    .cel
-                                        img.img-responsive(src="imgs/binoculars.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                                  .col-md-4.clearfix.d-none.d-md-block
-                                    .cel
-                                        img.img-responsive(src="imgs/biology.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                                  .col-md-4.clearfix.d-none.d-md-block
-                                    .cel
-                                        img.img-responsive(src="imgs/biology.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                              // /.Second slide
-                              // Third slide
-                              .carousel-item
-                                .row
-                                  .col-md-4
-                                    .cel
-                                        img.img-responsive(src="imgs/binoculars.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                                  .col-md-4.clearfix.d-none.d-md-block
-                                    .cel
-                                        img.img-responsive(src="imgs/biology.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                                  .col-md-4.clearfix.d-none.d-md-block
-                                    .cel
-                                        img.img-responsive(src="imgs/binoculars.jpg")
-                                        .overlay.text-center
-                                            .read-more
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                .clearfix
-                                                a(href="#"): button Read More
-                                        .title
-                                            p HOW TO MANAGE YOUR STAFF BEHAVIOR. 
-                                                br 
-                                                | 1 BASIC CONCEPTS
-                              // /.Third slide
-                            // /.Slides
-                          // /.Carousel Wrapper
-                          .more-articles
-                            a(href="#"): button Read More Articles
-                                            img.img-responsive(src="imgs/btn-icon.png")
-            
-            
-            
-            //useful Vids
-            .videos(class="wow fadeInUp", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                .container
-                    .uv-header(class="wow slideInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        p
-                            span Useful 
-                            | Videos
-                    .uv-disc: p.lead Lorem Ipsum is simply dummy text of the printing and typesettin printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
-                    .row
-                        .col-md-8(class="wow slideInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                            .list-vids
-                                .scroll-line: span
-                                .listed-vid
-                                    .img
-                                        .overlay.text-center
-                                            .vid-icons
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                    
-                                        span.text-center: i.fa.fa-play
-                                    .vid-detail
-                                        p.lead Lorem Ipsum is simply dummy text of the printing and  when an unknown printing
-                                        span.play-line: span
-                                        .clearfix
-                                        .min-detail
-                                            span 56.10 
-                                                i.fa.fa-film
-                                            span 15 June 2019
-                                                i.fa.fa-clock
-                                            span 1234
-                                                i.fa.fa-eye
-                                            span 16
-                                                i.fa.fa-comment
-                                .listed-vid.sp-mr
-                                    .img
-                                        .overlay.text-center
-                                            .vid-icons
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                                    
-                                        span.text-center: i.fa.fa-play
-                                    .vid-detail
-                                        p.lead Lorem Ipsum is simply dummy text of the printing and  when an unknown printing
-                                        span.play-line: span
-                                        .clearfix
-                                        .min-detail
-                                            span 56.10 
-                                                i.fa.fa-film
-                                            span 15 June 2019
-                                                i.fa.fa-clock
-                                            span 1234
-                                                i.fa.fa-eye
-                                            span 16
-                                                i.fa.fa-comment
-                                .listed-vid
-                                    .img
-                                        .overlay.text-center
-                                            .vid-icons
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-facebook-f
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-twitter
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-youtube
-                                                a(href="#"): .hexagon
-                                                    i.fab.fa-google-plus-g
-                                            
-                                        span.text-center: i.fa.fa-play
-                                    .vid-detail
-                                        p.lead Lorem Ipsum is simply dummy text of the printing and  when an unknown printing
-                                        span.play-line: span
-                                        .clearfix
-                                        .min-detail
-                                            span 56.10 
-                                                i.fa.fa-film
-                                            span 15 June 2019
-                                                i.fa.fa-clock
-                                            span 1234
-                                                i.fa.fa-eye
-                                            span 16
-                                                i.fa.fa-comment
-                        .col-md-4(class="wow slideInRight", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                            a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"): .display-vid
-                                img.img-responsive(src="imgs/biology.jpg")
-                                .display-vid-icon.text-center
-                                    i.fa.fa-play
-            
-            //student testmonials
-            .stud-test(class="wow fadeInUp", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                .container
-                    .st-header(class="wow slideInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        p
-                            span Student 
-                            | Testmonials
-                    .testmonial(class="wow fadeIn", data-wow-duration="2s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        .testmonial-imgs
-                            .img-one.m-img
-                            .main-img
-                                .img-two
-                            .img-three.m-img
-                            .test-name.text-center
-                                p ibtdi
-                                i.fa.fa-caret-down
-                        .testmonial-txt.text-center
-                            .qut-left: i.fa.fa-quote-left
-                            p.lead.qut-one Lorem Ipsum is simply dummy text of the printing and  when an unknown
-                            p.lead.qut-two.active Lorem Ipsum is simply dummy text of the printing and  when an unknown
-                            p.lead.qut-three Lorem Ipsum is simply dummy text of the printing and  when an unknown
-                            .qut-right: i.fa.fa-quote-right
-            
-            
-            // quality for you
-            .quality(class="wow fadeInUp", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                .container
-                    .qu-header(class="wow slideInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        p
-                            span Quality 
-                            | For You
-                    .img(class="wow slideInRight", data-wow-duration="1.5s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        img.img-responsive(src="imgs/Polygon2.png")
-                    .owl-carousel.owl-theme.owl-loaded(class="wow fadeInUp", data-wow-duration="2s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        .owl-stage-outer
-                            .owl-stage
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                                .owl-item
-                                    .card
-                                      img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                      .card-body.text-center
-                                        p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                
-            
-            
-            //blog articles
-            .blogs(class="wow fadeInUp", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                .container
-                    .ba-header(class="wow slideInLeft", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                        p
-                            span Blog 
-                            | Articles
-                    .row
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                        .col-md-3.col-sm-12
-                            .card
-                                img.img-responsive(src="imgs/biology.jpg", class="card-img-top", alt="...")
-                                .card-body.text-center
-                                    p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
-                    
-                    //more articles button
-                    .more-articles
-                            a(href="#"): button Read More Articles
-                                            img.img-responsive(src="imgs/btn-icon.png")
-            
-            // contact us
-            .contact(class="wow fadeInUp", data-wow-duration="1s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                .container
-                    .row
-                        .col-md-7(class="wow fadeIn", data-wow-duration="1.6s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                            .contact-form
-                                .hexagon: img.img-responsive(src="imgs/envelope-icon.png")
-                                .contact-header.text-center
-                                    h3 Contact 
-                                        span Us
-                                    span.span: i.fa.fa-caret-down
-                                .row
-                                    .col-md-7
-                                        form(class="form-group", method="post")
-                                            input(class="form-control" placeholder="Your Name")
-                                            input(class="form-control" placeholder="Your Email")
-                                            input(class="form-control" placeholder="Your Subject")
-                                            textarea(class="form-control" placeholder="Message Here")
-                                            button(class="send btn btn-danger" type="submit") Send
-                                    .col-md-5
-                                        .contact-info
-                                            .info
-                                                i.fa.fa-phone-square
-                                                | (966+)021151222
-                                            .info
-                                                i.fa.fa-envelope
-                                                | Info@ibtdi.com
-                                            .info
-                                                i.fa.fa-map-marker-alt
-                                                | Name st saudi arabia
-                                            .location
-                                                .mapouter
-                                                  .gmap_canvas
-                                                    iframe#gmap_canvas(src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
-                                                  style.
-                                                    .mapouter{position:relative;text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
-
-                        .col-md-1
-                        .col-md-4(class="wow slideInRight", data-wow-duration="1.6s", data-wow-delay="0", data-wow-offset="100", data-wow-iteration="1")
-                            .contact-list
-                                .list
-                                    ul.list-unstyled
-                                        a(href="#"): li.active Home
-                                            i.fa.fa-home
-                                        a(href="#"): li Healthcare Control
-                                        a(href="#"): li Laboratory
-                                        a(href="#"): li Forum
-                                        a(href="#"): li About Me
-                                        a(href="#"): li Contact Us
-                                        a(href="#"): li Testmonials
-                                        a(href="#"): li Blog
-                                        a(href="#"): li Best Articles
-                                        a(href="#"): li Quality For You
-                                .line
-                                    span.span
-                                        span
-                                .icons.text-center
-                                    a(href="#"): .hexagon: i.fab.fa-facebook-f
-                                    a(href="#"): .hexagon: i.fab.fa-twitter
-                                    a(href="#"): .hexagon: i.fab.fa-youtube
-                                    a(href="#"): .hexagon: i.fab.fa-google-plus-g
-            
-            
-            
-            // copyrights
-            .copyrights
-                .container
-                    .row
-                        .col-md-6.col-sm-6.text-left
-                            p.left All Copyrights Reserved To
-                                span  @ 
-                                | AmrElsadany.com
-                        .col-md-6.col-sm-6.text-right
-                            p.right Designed And Programming By   
-                                span Ibtdi.com
-                                    img.img-responsive(src="imgs/ibtdilogo.png" alt="ibtdi logo")
-            
-            //  h1(class="wow bounceIn", 
-            //     data-wow-duration="5s",
-            //     data-wow-delay="1s",
-            //     data-wow-offset="100",
-            //     data-wow-iteration="3") hay
-            
-
-script(src="http://code.jquery.com/jquery-1.12.4.min.js", integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=", crossorigin="anonymous")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", crossorigin="anonymous")
-script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous")
-script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js")
-script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js")
-script(src="js/jquery.countTo.js", type="text/javascript")
-script(src="js/main.js")
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  meta(name='description' content="Hi, I’m M.Zayn , I'm a Front-End")
+  link(rel='shortcut icon' href='#')
+  title Dr.Amr El-Esaadany
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&display=swap')
+  link(rel='stylesheet' href='css/style.css')
+  // navbar
+  .upper-nav
+    .overlay
+      .container
+        .left
+          a(href='#')
+            img.img-responsive(src='imgs/icon/log-icon.png')
+            span Login
+            i.fa.fa-sort-down
+          a(href='#')
+            img.img-responsive(src='imgs/icon/stuff-icon.png')
+            span StuffMail
+        .right
+          a(href='#')
+            i.fab.fa-facebook-f
+          a(href='#')
+            i.fab.fa-twitter
+          a(href='#')
+            i.fab.fa-youtube
+          a(href='#')
+            i.fab.fa-google-plus-g
+          .mark
+            img.img-responsive(src='imgs/icon/mark-icon.png')
+        .clearfix
+  // header
+  .header
+    .container
+      .nav.wow.fadeInUp(data-wow-duration='.50s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
+        ul.list-unstyled.text-center
+          li.nav-logo
+            img.img-responsive(src='imgs/logo.png')
+          li.home
+            i.fa.fa-home.home-icon
+            span
+              a(href='#') Home
+          li.sp-li
+            a(href='#') About Me
+          li.sp-li
+            a(href='#') Form
+          li.sp-li
+            a(href='#') Laboratory
+          li.sp-li
+            a(href='#') Healthcare Quality
+          li.sp-li
+            a(href='#') Contact Us
+          li.sp-li
+            a(href='#')
+              i.fa.fa-ellipsis-h
+          li.sp-li.search
+            a(href='#')
+              i.fa.fa-search
+        .clearfix
+      .sm-nav.wow.fadeInUp(data-wow-duration='.50s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
+        .nav-logo
+          img.img-responsive(src='imgs/logo.png')
+        .nav-list
+          .nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              i.fa.fa-home.home-icon
+              |  Home
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='#') About Me
+              a.dropdown-item(href='#') Form
+              a.dropdown-item(href='#') Laboratory
+              a.dropdown-item(href='#') Healthcare Quality
+              a.dropdown-item(href='#') Contact Us
+              .dropdown-divider
+              a.dropdown-item(href='#')
+                i.fa.fa-search  
+                |  Search
+        .clearfix
+      .row
+        .col-md-9.wow.fadeInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
+          .intro
+            h1 Hello ,,
+            h3 I&apos;m Dr. Amr Elsadany
+            p.lead
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+            button Read More
+        .col-md-3.wow.slideInRight(data-wow-duration='1.2s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
+          .doc
+            .doc-img
+              img.img-responsive(src='imgs/layer-3.png')
+  // banner
+  .banner(data-toggle='modal' data-target='#exampleModalLong')
+    a(href='#')
+      img.img-responsive(src='imgs/amro banner.jpg')
+  .sm-banner
+    .img-one
+      img(src='imgs/book.png')
+    .img-two
+      img(src='imgs/how-to.png')
+    .img-three(data-toggle='modal' data-target='#exampleModalLong')
+      img(src='imgs/btn.png')
+  #exampleModalLong.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+        .img-one
+          img(src='imgs/book.png')
+        .img-two
+          img(src='imgs/how-to.png')
+        .img-three(data-toggle='modal' data-target='#exampleModalLong')
+          a(href='#')
+            img(src='imgs/btn.png')
+  .best-article
+    .container
+      .ba-header.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        p
+          span Best 
+          | Article
+      .owl-carousel.owl-carousel-one.owl-theme.owl-loaded.wow.slideInUp(data-wow-duration='1.5s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
+        .owl-stage-outer
+          .owl-stage
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+            .owl-item
+              .cel
+                img(src='imgs/biology.jpg')
+                .overlay.text-center
+                  .read-more
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                    .clearfix
+                    a(href='#')
+                      button Read More
+                .title
+                  p
+                    | HOW TO MANAGE YOUR STAFF BEHAVIOR. 
+                    br
+                    | 1 BASIC CONCEPTS
+      // more articles button
+      .more-articles
+        a(href='#')
+          button
+            | Read More Articles
+            img.img-responsive(src='imgs/btn-icon.png')
+  // useful Vids
+  .videos.wow.fadeInUp(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+    .container
+      .uv-header.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        p
+          span Useful 
+          | Videos
+      .uv-disc
+        p.lead
+          | Lorem Ipsum is simply dummy text of the printing and typesettin printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500
+      .row
+        .col-md-8.full-colm.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+          .list-vids
+            .scroll-line
+              span
+            .listed-vid
+              .img
+                .overlay.text-center
+                  .vid-icons
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                span.text-center
+                  i.fa.fa-play
+              .vid-detail
+                p.lead Lorem Ipsum is simply dummy text of the printing and  when an unknown printing
+                span.play-line
+                  span
+                .clearfix
+                .min-detail
+                  span
+                    | 56.10 
+                    i.fa.fa-film
+                  span
+                    | 15 June 2019
+                    i.fa.fa-clock
+                  span
+                    | 1234
+                    i.fa.fa-eye
+                  span
+                    | 16
+                    i.fa.fa-comment
+            .listed-vid.sp-mr
+              .img
+                .overlay.text-center
+                  .vid-icons
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                span.text-center
+                  i.fa.fa-play
+              .vid-detail
+                p.lead Lorem Ipsum is simply dummy text of the printing and  when an unknown printing
+                span.play-line
+                  span
+                .clearfix
+                .min-detail
+                  span
+                    | 56.10 
+                    i.fa.fa-film
+                  span
+                    | 15 June 2019
+                    i.fa.fa-clock
+                  span
+                    | 1234
+                    i.fa.fa-eye
+                  span
+                    | 16
+                    i.fa.fa-comment
+            .listed-vid
+              .img
+                .overlay.text-center
+                  .vid-icons
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-facebook-f
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-twitter
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-youtube
+                    a(href='#')
+                      .hexagon
+                        i.fab.fa-google-plus-g
+                span.text-center
+                  i.fa.fa-play
+              .vid-detail
+                p.lead Lorem Ipsum is simply dummy text of the printing and  when an unknown printing
+                span.play-line
+                  span
+                .clearfix
+                .min-detail
+                  span
+                    | 56.10 
+                    i.fa.fa-film
+                  span
+                    | 15 June 2019
+                    i.fa.fa-clock
+                  span
+                    | 1234
+                    i.fa.fa-eye
+                  span
+                    | 16
+                    i.fa.fa-comment
+        .col-md-4.full-colm.wow.slideInRight(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+          a(data-fancybox='' href='https://www.youtube.com/watch?v=_sI_Ps7JSEk')
+            .display-vid
+              img.img-responsive(src='imgs/biology.jpg')
+              .display-vid-icon.text-center
+                i.fa.fa-play
+  // student testmonials
+  .stud-test.wow.fadeInUp(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+    .container
+      .st-header.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        p
+          span Student 
+          | Testmonials
+      .testmonial.wow.fadeIn(data-wow-duration='2s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        .testmonial-imgs
+          .img-one.m-img
+          .main-img
+            .img-two
+          .img-three.m-img
+          .test-name.text-center
+            p ibtdi
+            i.fa.fa-caret-down
+        .testmonial-txt.text-center
+          .qut-left
+            i.fa.fa-quote-left
+          p.lead.qut-one Lorem Ipsum is simply dummy text of the printing
+          p.lead.qut-two.active Lorem Ipsum is simply dummy text of the printing and  when an unknown lorem
+          p.lead.qut-three Lorem Ipsum is simply dummy text of the printing and  when an unknown
+          .qut-right
+            i.fa.fa-quote-right
+  // quality for you
+  .quality.wow.fadeInUp(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+    .container
+      .qu-header.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        p
+          span Quality 
+          | For You
+      .img.wow.slideInRight(data-wow-duration='1.5s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        img.img-responsive(src='imgs/Polygon2.png')
+      .owl-carousel.owl-theme.owl-loaded.wow.fadeInUp(data-wow-duration='2s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        .owl-stage-outer
+          .owl-stage
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+            .owl-item
+              .card
+                img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+                .card-body.text-center
+                  p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+  // blog articles
+  .blogs.wow.fadeInUp(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+    .container
+      .ba-header.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+        p
+          span Blog 
+          | Articles
+      .row
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+        .col-md-3.col-sm-12.half-colm
+          .card
+            img.img-responsive.card-img-top(src='imgs/biology.jpg' alt='...')
+            .card-body.text-center
+              p.card-textSome HOW TO MANAGE YOUR STAFF BEHAVIOR. BASIC CONCEPTS and More Behaior
+      // more articles button
+      .more-articles
+        a(href='#')
+          button
+            | Read More Articles
+            img.img-responsive(src='imgs/btn-icon.png')
+  // contact us
+  .contact.wow.fadeInUp(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+    .container
+      .row
+        .col-md-7.full-colm.wow.fadeIn(data-wow-duration='1.6s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+          .contact-form
+            .hexagon
+              img.img-responsive(src='imgs/envelope-icon.png')
+            .contact-header.text-center
+              h3
+                | Contact 
+                span Us
+              span.span
+                i.fa.fa-caret-down
+            .row
+              .col-md-7
+                form.form-group(method='post')
+                  input.form-control(placeholder='Your Name')
+                  input.form-control(placeholder='Your Email')
+                  input.form-control(placeholder='Your Subject')
+                  textarea.form-control(placeholder='Message Here')
+                  button.send.btn.btn-danger(type='submit') Send
+              .col-md-5
+                .contact-info
+                  .info
+                    i.fa.fa-phone-square
+                    | (966+)021151222
+                  .info
+                    i.fa.fa-envelope
+                    | Info@ibtdi.com
+                  .info
+                    i.fa.fa-map-marker-alt
+                    | Name st saudi arabia
+                  .location
+                    .mapouter
+                      .gmap_canvas
+                        iframe#gmap_canvas(src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+                      style.
+                        .mapouter{position:relative;text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+        .col-md-1
+        .col-md-4.full-colm.wow.slideInRight(data-wow-duration='1.6s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
+          .contact-list
+            .list
+              ul.list-unstyled
+                a(href='#')
+                  li.active
+                    | Home
+                    i.fa.fa-home
+                a(href='#')
+                  li Healthcare Control
+                a(href='#')
+                  li Laboratory
+                a(href='#')
+                  li Forum
+                a(href='#')
+                  li About Me
+                a(href='#')
+                  li Contact Us
+                a(href='#')
+                  li Testmonials
+                a(href='#')
+                  li Blog
+                a(href='#')
+                  li Best Articles
+                a(href='#')
+                  li Quality For You
+            .line
+              span.span
+                span
+            .icons.text-center
+              a(href='#')
+                .hexagon
+                  i.fab.fa-facebook-f
+              a(href='#')
+                .hexagon
+                  i.fab.fa-twitter
+              a(href='#')
+                .hexagon
+                  i.fab.fa-youtube
+              a(href='#')
+                .hexagon
+                  i.fab.fa-google-plus-g
+  // copyrights
+  .copyrights
+    .container
+      .row
+        .col-md-6.col-sm-6.full-colm.text-left
+          p.left
+            | All Copyrights Reserved To
+            span  @ 
+            | AmrElsadany.com
+        .col-md-6.col-sm-6.full-colm.text-right
+          p.right
+            | Designed And Programming By   
+            span Ibtdi.com
