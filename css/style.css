@@ -1452,7 +1452,6 @@ a {
   .videos .list-vids .scroll-line {
     left: -16px;
   }
-    /****************************/
     
   .videos .full-colm {
       flex: 0 0 100%;
@@ -1787,7 +1786,7 @@ a {
         font-size: 14px;
     }
   .videos .list-vids .listed-vid .vid-detail .play-line {
-        margin: 4px 0 12px 0;
+        margin: 2px 0 10px 0;
     }
   .videos .list-vids .listed-vid .vid-detail .min-detail {
         font-size: 11px;
