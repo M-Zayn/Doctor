@@ -114,9 +114,20 @@ $(document).ready(function(){
         
             $("#popup").on("click", function() {
         
-             $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto"});
+            $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto"});
+            $(".modal-dialog").css({"display": "block", "opacity":"1", "overflow":"auto"});
         
         });
+        $("#popup1").on("click", function() {
+        
+          $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto"});
+          $(".modal-dialog").css({"display": "block", "opacity":"1", "overflow":"auto"});
+        
+       });
+       $(".close").on("click", function() {
+          $(".modal").css({"display": "none", "opacity":"0", "overflow":"auto"});
+          $(".modal-dialog").css({"display": "none", "opacity":"0", "overflow":"auto"});
+       });
     
     
 });
