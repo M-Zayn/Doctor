@@ -1301,7 +1301,9 @@ a {
     display: none;
   }
   .header {
-    height: 540px;
+    height: 505px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   .header .nav {
     display: none;
@@ -1309,6 +1311,7 @@ a {
   .header .sm-nav {
     display: block;
     width: 100%;
+    height: 74px;
     background: rgba(255, 255, 255, 0.059);
     padding: 16px 16px;
     }
@@ -1329,37 +1332,46 @@ a {
     }
   .header .sm-nav .nav-list .dropdown {
         font-family: myFirstFont;
-    }
-  .header .sm-nav .nav-list .dropdown .dropdown-toggle {
-        font-family: myFirstFont;
-        font-size: 16px !important;
+        font-size: 20px !important;
         color: #fafafa;
-        padding: 13px 0 0 131px;
+        padding: 13px 0 0 140px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
     }
-  .header .sm-nav .nav-list .dropdown .dropdown-toggle::after {
-        display: none;
-    }
-  .header .sm-nav .nav-list .dropdown .dropdown-menu {
-        font-size: 18px !important;
-        padding: .3rem 0;
-        background: #c71937 !important;
-        border: none;
-        float: right;
-        z-index: 9999;
-    }
-    .header .sm-nav .nav-list .dropdown .show {
-        top: 16px !important;
-        left: 136px !important;
-    }
-  .header .sm-nav .nav-list .dropdown .dropdown-menu .dropdown-item {
+  .header .sm-nav .nav-list .menu {
         font-family: myFirstFont;
-        padding: .25rem 1rem;
-        color: #fafafa !important;
-        transition: all .3s ease-in-out;
+        font-weight: bold;
+        background: rgba(0,0,0, .6);
+        position: fixed;
+        top: 0;
+        right: -210px;
+        width: 210px;
+        height: 100%;
+        padding: 16px 0;
+        z-index: 9999;
+        opacity: 0;
+        transition: all .5s ease-in-out;
     }
-  .header .sm-nav .nav-list .dropdown .dropdown-menu .dropdown-item:hover {
-        padding: .25rem 1rem .25rem 2rem;
-        color: #000 !important;
+    .header .sm-nav .nav-list .menu .fa-times {
+        display: block;
+        cursor: pointer;
+        color: #c30b2a;
+        font-size: 24px;
+        padding: 0px 22px 12px;
+    }
+    .header .sm-nav .nav-list .menu a {
+        display: block;
+        color: #F3f3f3;
+        padding: 4px 1px 0px 36px;
+        margin: 6px 2px 6px 2px;
+        transition: all .3s ease-in-out; 
+    }
+    .header .sm-nav .nav-list .menu a:hover {
+        text-decoration: none;
+        background: #DDD;
+        color: #c30b2a;
+        padding: 4px 1px 0px 42px;
+        
     }
   .header .intro h1 {
     margin-top: 16px;
@@ -1396,7 +1408,7 @@ a {
   .sm-banner .img-one {
         width: 230px;
         height: 300px;
-        margin: 20px auto;
+        margin: 60px auto 20px auto;
     }
   .sm-banner .img-two {
         width: 350px;
@@ -1608,20 +1620,11 @@ a {
   .header {
     height: 540px;
   }
-  .header .sm-nav .nav-list .dropdown .dropdown-toggle {
-        padding: 7px 0 0 120px;
+  .header .sm-nav {
+        height: 64px;
     }
-  .header .sm-nav .nav-list .dropdown .dropdown-menu {
-        font-size: 18px !important;
-        padding: .3rem 0;
-        background: #c71937 !important;
-        border: none;
-        float: right;
-        z-index: 9999;
-    }
-    .header .sm-nav .nav-list .dropdown .show {
-        top: 16px !important;
-        left: 110px !important;
+  .header .sm-nav .nav-list .dropdown {
+        padding: 5px 0 0 130px;
     }
   .sm-banner {
         display: block;
@@ -1729,6 +1732,9 @@ a {
   .header {
     height: 590px;
   }
+  .header .sm-nav {
+        height: 66px;
+    }
   .header .sm-nav .nav-logo {
         width: 60%;
         padding-top: 5px;
@@ -1736,12 +1742,9 @@ a {
   .header .sm-nav .nav-list {
         width: 40px;
     }
-  .header .sm-nav .nav-list .dropdown .dropdown-toggle {
-        padding: 7px 0 0 40px;
-    }
-  .header .sm-nav .nav-list .dropdown .show {
-        top: 16px !important;
-        left: -23px !important;
+  .header .sm-nav .nav-list .dropdown {
+        padding: 8px 0 0 90px;
+        font-size: 18px !important;
     }
   .header .intro h1 {
         font-size: 45px;
@@ -1750,10 +1753,15 @@ a {
         font-size: 32px;
     }
   .modal-dialog {
-        max-width: 390px;
+        max-width: 380px;
     }
     .modal-dialog .modal-content {
-        width: 390px;
+        width: 380px;
+    }
+    .modal-dialog .modal-content .close {
+        width: 50px;
+        height: 50px;
+        font-size: 77px;
     }
     .modal-dialog .modal-content .img-one {
         width: 280px;
@@ -1774,7 +1782,7 @@ a {
         display: none;
     }
   .videos .list-vids .scroll-line {
-    left: -10px;
+        display: none;
   }
   .videos .list-vids .listed-vid .img {
         width: 30%;
@@ -1783,13 +1791,13 @@ a {
         width: 70%;
     }
   .videos .list-vids .listed-vid .vid-detail p {
-        font-size: 14px;
+        font-size: 13px;
     }
   .videos .list-vids .listed-vid .vid-detail .play-line {
-        margin: 2px 0 10px 0;
+        margin: 25px 0 16px 0;
     }
   .videos .list-vids .listed-vid .vid-detail .min-detail {
-        font-size: 2px;
+        font-size: 9px;
     }
   .videos .list-vids .listed-vid .img .overlay .vid-icons {
         width: 50%;
