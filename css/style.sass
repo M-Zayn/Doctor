@@ -17,6 +17,9 @@ a
   left: 0
   top: 0
 
+.main-menu
+  display: none
+
 .upper-nav
   width: 100%
   height: 50px
@@ -168,14 +171,44 @@ a
       height: 100%
 
 .banner
-  margin: 66px auto
+  margin: 60px auto
   width: 100%
   height: 400px
   overflow: hidden
 
-  img
+  .img
+    width: 250px
+    height: 390px
     margin: auto
+
+    img
+      width: 100%
+      height: 100%
+
+  p
+    font-family: myFirstFont
+    font-size: 50px
+    color: #c30b2a
+    text-align: center
+    margin: 70px auto 60px
+
+  button
+    font-family: myFirstFont
+    font-size: 19px
+    font-weight: bold
+    color: #000
+    background: #FFF
+    border: 1px solid #EEE
+    border-radius: 4px
+    text-align: center
     display: block
+    width: 200px
+    margin: auto
+    padding: 16px 16px 9px
+    transition: all .4s ease-in-out
+
+    &:hover
+      box-shadow: 0px 0px 30px 0px #bd5555
 
 .sm-banner
   display: none
@@ -202,17 +235,38 @@ a
         color: #c30b2a
 
     .img-one
-      width: 400px
-      height: 550px
+      width: 300px
+      height: 450px
       margin: 120px auto 50px
 
     .img-two
       width: 600px
-      margin: 0 auto 0
+      margin: auto
 
-    .img-three
-      width: 220px
-      margin: 50px auto
+      p
+        font-family: myFirstFont
+        font-size: 45px
+        color: #c30b2a
+        text-align: center
+        margin: 10px auto 20px
+
+    .img-three button
+      font-family: myFirstFont
+      font-size: 19px
+      font-weight: bold
+      color: #000
+      background: #FFF
+      border: 1px solid #EEE
+      border-radius: 4px
+      text-align: center
+      display: block
+      width: 200px
+      margin: 0 auto 60px
+      padding: 16px 16px 9px
+      transition: all .4s ease-in-out
+
+      &:hover
+        box-shadow: 0px 0px 30px 0px #bd5555
 
     .img-one img, .img-two img, .img-three img
       width: 100%
@@ -576,6 +630,7 @@ a
             font-family: myFirstFont, sans-serif
             display: inline-block
             margin: 0 9px 0 0
+            float: left
 
             i
               float: left
@@ -1165,7 +1220,6 @@ a
   .banner
     margin: 66px auto
     width: 100%
-    height: 300px
     overflow: hidden
 
     img
@@ -1302,7 +1356,9 @@ a
     display: none
 
   .header
-    height: 540px
+    height: 505px
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
 
     .nav
       display: none
@@ -1310,6 +1366,7 @@ a
     .sm-nav
       display: block
       width: 100%
+      height: 74px
       background: rgba(255, 255, 255, 0.059)
       padding: 16px 16px
 
@@ -1330,38 +1387,57 @@ a
 
         .dropdown
           font-family: myFirstFont
+          font-size: 20px !important
+          color: #fafafa
+          padding: 13px 0 0 140px
+          cursor: pointer
+          transition: all .5s ease-in-out
 
-          .dropdown-toggle
-            font-family: myFirstFont
-            font-size: 16px !important
-            color: #fafafa
-            padding: 13px 0 0 131px
+  .menu-overlay
+    background: rgba(0, 0, 0, 0.6)
+    z-index: 9999
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: none
 
-            &::after
-              display: none
+  .menu
+    font-family: myFirstFont
+    font-weight: bold
+    background: rgba(195, 11, 42, 0.9)
+    position: fixed
+    top: 0
+    right: -210px
+    width: 210px
+    height: 100%
+    padding: 16px 0
+    z-index: 9999
+    opacity: 0
+    transition: all .5s ease-in-out
 
-          .dropdown-menu
-            font-size: 18px !important
-            padding: .3rem 0
-            background: #c71937 !important
-            border: none
-            float: right
-            z-index: 9999
+    .fa-times
+      display: block
+      cursor: pointer
+      color: #333
+      font-size: 24px
+      padding: 0px 22px 12px
 
-          .show
-            top: 16px !important
-            left: 136px !important
+    a
+      display: block
+      color: #F3f3f3
+      padding: 4px 1px 0px 36px
+      margin: 6px 2px 6px 2px
+      transition: all .3s ease-in-out
 
-          .dropdown-menu .dropdown-item
-            font-family: myFirstFont
-            padding: .25rem 1rem
-            color: #fafafa !important
-            transition: all .3s ease-in-out
+      &:hover
+        text-decoration: none
+        background: #DDD
+        color: #c30b2a
+        padding: 4px 1px 0px 42px
 
-            &:hover
-              padding: .25rem 1rem .25rem 2rem
-              color: #000 !important
-
+  .header
     .intro
       h1
         margin-top: 16px
@@ -1385,6 +1461,9 @@ a
     .col-md-3
       display: none
 
+  .main-menu
+    display: block
+
   .banner
     margin: 10px auto 30px
     width: 100%
@@ -1397,18 +1476,36 @@ a
     .img-one
       width: 230px
       height: 300px
-      margin: 20px auto
+      margin: 60px auto 20px auto
 
     .img-two
-      width: 350px
-      height: 58px
-      margin: 20px auto 10px
+      width: 500px
+      margin: auto
 
-    .img-three
-      width: 115px
-      height: 58px
-      margin: 0px auto
-      cursor: pointer
+      p
+        font-family: myFirstFont
+        font-size: 40px
+        color: #c30b2a
+        text-align: center
+        margin: 40px auto 30px
+
+    .img-three button
+      font-family: myFirstFont
+      font-size: 16px
+      font-weight: bold
+      color: #000
+      background: #FFF
+      border: 1px solid #EEE
+      border-radius: 4px
+      text-align: center
+      display: block
+      width: 190px
+      margin: 0 auto 30px
+      padding: 16px 16px 9px
+      transition: all .4s ease-in-out
+
+      &:hover
+        box-shadow: 0px 0px 30px 0px #bd5555
 
     .img-one img, .img-two img, .img-three img
       width: 100%
@@ -1480,8 +1577,6 @@ a
       .display-vid-icon
         top: 43%
         left: 44%
-
-  /***************************
 
   .stud-test
     .st-header p
@@ -1609,21 +1704,11 @@ a
   .header
     height: 540px
 
-    .sm-nav .nav-list .dropdown
-      .dropdown-toggle
-        padding: 7px 0 0 120px
+    .sm-nav
+      height: 64px
 
-      .dropdown-menu
-        font-size: 18px !important
-        padding: .3rem 0
-        background: #c71937 !important
-        border: none
-        float: right
-        z-index: 9999
-
-      .show
-        top: 16px !important
-        left: 110px !important
+      .nav-list .dropdown
+        padding: 5px 0 0 130px
 
   .sm-banner
     display: block
@@ -1631,14 +1716,36 @@ a
     .img-one
       width: 230px
       height: 300px
+      margin: 60px auto 20px auto
 
     .img-two
-      width: 366px
-      height: 65px
+      width: 500px
+      margin: auto
 
-    .img-three
-      width: 130px
-      height: 68px
+      p
+        font-family: myFirstFont
+        font-size: 40px
+        color: #c30b2a
+        text-align: center
+        margin: 40px auto 30px
+
+    .img-three button
+      font-family: myFirstFont
+      font-size: 16px
+      font-weight: bold
+      color: #000
+      background: #FFF
+      border: 1px solid #EEE
+      border-radius: 4px
+      text-align: center
+      display: block
+      width: 190px
+      margin: 0 auto 30px
+      padding: 16px 16px 9px
+      transition: all .4s ease-in-out
+
+      &:hover
+        box-shadow: 0px 0px 30px 0px #bd5555
 
   .modal-dialog
     max-width: 600px
@@ -1647,14 +1754,14 @@ a
       width: 600px
 
       .img-one
-        width: 300px
-        height: 450px
+        width: 200px
+        height: 310px
 
       .img-two
         width: 500px
 
-      .img-three
-        width: 180px
+        p
+          font-size: 40px
 
   .best-article .cel
     .overlay .read-more
@@ -1730,11 +1837,17 @@ a
           width: 100%
           height: 212px
 
+  .best-article .owl-carousel-one
+    .owl-prev span, .owl-next span
+      display: none
+
 @media (max-width: 480px)
   .header
     height: 590px
 
     .sm-nav
+      height: 66px
+
       .nav-logo
         width: 60%
         padding-top: 5px
@@ -1743,12 +1856,8 @@ a
         width: 40px
 
         .dropdown
-          .dropdown-toggle
-            padding: 7px 0 0 40px
-
-          .show
-            top: 16px !important
-            left: -23px !important
+          padding: 8px 0 0 90px
+          font-size: 18px !important
 
     .intro
       h1
@@ -1757,22 +1866,43 @@ a
       h3
         font-size: 32px
 
+  .sm-banner
+    display: block
+
+    .img-two
+      width: 400px
+      margin: auto
+
+      p
+        font-size: 36px
+        margin: 40px auto 25px
+
+    .img-three button
+      margin: 0 auto 50px
+
   .modal-dialog
-    max-width: 390px
+    max-width: 385px
 
     .modal-content
-      width: 390px
+      width: 385px
+
+      .close
+        width: 50px
+        height: 50px
+        font-size: 77px
+        z-index: 999
 
       .img-one
-        width: 280px
-        height: 390px
+        width: 200px
+        height: 300px
 
       .img-two
-        width: 300px
+        width: 330px
+
+        p
+          font-size: 32px
 
       .img-three
-        width: 150px
-        margin: 30px auto
 
   .best-article
     .cel .overlay .read-more
@@ -1785,7 +1915,7 @@ a
   .videos
     .list-vids
       .scroll-line
-        left: -10px
+        display: none
 
       .listed-vid
         .img
@@ -1798,10 +1928,10 @@ a
             font-size: 14px
 
           .play-line
-            margin: 4px 0 12px 0
+            margin: 22px 0 16px 0
 
           .min-detail
-            font-size: 11px
+            font-size: 9px
 
         .img .overlay .vid-icons
           width: 50%
@@ -1862,50 +1992,49 @@ a
     height: 600px
 
   .sm-banner
-    .img-one
-      width: 200px
-      height: 280px
-
     .img-two
-      width: 320px
-      height: 56px
+      width: 350px
+      margin: auto
+
+      p
+        font-size: 36px
+        margin: 40px auto 25px
+
+    .img-three button
+      margin: 0 auto 50px
 
   .modal-dialog
-    max-width: 360px
+    max-width: 350px
 
     .modal-content
-      width: 360px
+      width: 350px
 
   .best-article .cel .overlay .read-more
-    width: 55%
+    width: 60%
 
   .videos
-    .list-vids
-      .scroll-line
-        left: -9px
+    .list-vids .listed-vid
+      .vid-detail
+        p
+          font-size: 13px
 
-      .listed-vid
-        .vid-detail
-          p
-            font-size: 13px
+        .play-line
+          margin: 8px 0 16px 0
 
-          .play-line
-            margin: 8px 0 16px 0
+        .min-detail
+          font-size: 10px
 
-          .min-detail
-            font-size: 10px
+      .img .overlay .vid-icons
+        width: 73%
+        margin: 27px auto
 
-        .img .overlay .vid-icons
-          width: 50%
-          margin: 27px auto
+        .hexagon
+          width: 25px
+          height: 16.43px
+          margin: 6.22px 0px
 
-          .hexagon
-            width: 25px
-            height: 16.43px
-            margin: 6.22px 0px
-
-            i
-              top: 1.5px
+          i
+            top: 1.5px
 
     .display-vid .display-vid-icon
       top: 40%
@@ -1933,11 +2062,7 @@ a
     height: 600px
 
     .sm-nav .nav-list .dropdown
-      .dropdown-toggle
-        padding: 7px 0 0 33px
-
-      .show
-        left: -45px !important
+      padding: 7px 0 0 67px
 
     .intro
       h1
@@ -1950,32 +2075,37 @@ a
         font-size: 17px
 
   .sm-banner
-    .img-one
-      width: 190px
-      height: 270px
-
     .img-two
-      width: 290px
-      height: 50px
+      width: 300px
+      margin: auto
 
-    .img-three
-      margin: 0 auto 60px auto
+      p
+        font-size: 30px
+        margin: 40px auto 25px
+
+    .img-three button
+      margin: 0 auto 50px
+      padding: 14px 14px 9px
+      width: 170px
+      font-size: 15px
 
   .modal-dialog
-    max-width: 300px
+    max-width: 290px
 
     .modal-content
-      width: 300px
+      width: 290px
 
       .img-one
-        width: 200px
-        height: 300px
+        width: 190px
+        height: 280px
 
       .img-two
-        width: 250px
+        width: 260px
+
+        p
+          font-size: 27px
 
       .img-three
-        width: 100px
         margin: 10px auto 30px
 
   .best-article
@@ -1984,7 +2114,7 @@ a
 
     .cel
       .overlay .read-more
-        width: 65%
+        width: 70%
 
       .title p
         font-size: 13px
@@ -2002,7 +2132,7 @@ a
             padding: 0 3px 0 0 0
 
       .img .overlay .vid-icons
-        width: 60%
+        width: 70%
 
     .display-vid
       height: 250px
