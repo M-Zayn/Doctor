@@ -28,6 +28,21 @@
         </div>
       </div>
     </div>
+      <div class="main-menu">
+          <div class="menu-overlay">
+            <div class="menu">
+                  <i class="fa fa-times"></i>
+                  <a href="#"><i class="fa fa-home home-icon"></i> Home</a>
+                  <a href="#">About Me</a>
+                  <a href="#">Form</a>
+                  <a href="#">Laboratory</a>
+                  <a href="#">Healthcare Quality</a>
+                  <a href="#">Contact Us</a>
+                    <hr>
+                  <a href="#"><i class="fa fa-search"> </i> Search</a>
+              </div>
+          </div>
+      </div>
     <!-- header-->
     <div class="header">
       <div class="container">
@@ -51,17 +66,6 @@
                 <div id="menu" class="nav-item dropdown">
                       <i class="fa fa-bars"></i>
                 </div>
-                    <div class="menu">
-                      <i class="fa fa-times"></i>
-                      <a href="#"><i class="fa fa-home home-icon"></i> Home</a>
-                      <a href="#">About Me</a>
-                      <a href="#">Form</a>
-                      <a href="#">Laboratory</a>
-                      <a href="#">Healthcare Quality</a>
-                      <a href="#">Contact Us</a>
-                        <hr>
-                      <a href="#"><i class="fa fa-search"> </i> Search</a>
-                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -84,20 +88,34 @@
       </div>
     </div>
     <!--banner-->
-    <div id="popup" class="banner" data-toggle="modal"><a href="#"><img class="img-responsive" src="imgs/amro banner.jpg"></a></div>
+    <div class="banner" data-toggle="modal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>HOW TO MANAGE YOUR STAFF BEHAVIOR</p>
+                    <button id="popup" class="order-btn">ORDER NOW</button>
+                </div>
+                <div class="col-md-4">
+                    <div class="img">
+                        <img src="imgs/book.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="sm-banner">
         <div class="img-one">
             <img src="imgs/book.png">
         </div>
         <div class="img-two">
-            <img src="imgs/how-to.png">
+            <p>HOW TO MANAGE YOUR STAFF BEHAVIOR</p>
         </div>
         <div id="popup1" class="img-three" data-toggle="modal">
-            <img src="imgs/btn.png">
+            <button id="popup" class="order-btn">ORDER NOW</button>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    <div class="modal">
+      <div class="modal-dialog">
         <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -106,10 +124,10 @@
                 <img src="imgs/book.png">
             </div>
             <div class="img-two">
-                <img src="imgs/how-to.png">
+                <p>HOW TO MANAGE YOUR STAFF BEHAVIOR</p>
             </div>
             <div class="img-three" data-toggle="modal" data-target="#exampleModalLong">
-                <a href="#"><img src="imgs/btn.png"></a>
+                <button id="popup" class="order-btn">ORDER NOW</button>
             </div>
         </div>
       </div>
