@@ -118,31 +118,47 @@ $(document).ready(function(){
     
     $("#popup").on("click", function() {
         
-        $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto"});
+        $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto", "background":"rgba(0,0,0, 0.6)"});
         $(".modal-dialog").css({"display": "block", "opacity":"1", "overflow":"auto"});
+        $("body").css({"overflow":"hidden"});
         
     });
     $("#popup1").on("click", function() {
         
-        $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto"});
+        $(".modal").css({"display": "block", "opacity":"1", "overflow":"auto", "background":"rgba(0,0,0, 0.6)"});
         $(".modal-dialog").css({"display": "block", "opacity":"1", "overflow":"auto"});
+        $("body").css({"overflow":"hidden"});
         
     });
     $(".close").on("click", function() {
+        $(".modal").fadeOut();
+        $(".modal-dialog").fadeOut();
+        $("body").css({"overflow":"auto"});
+    });
+    $(".modal").on("click", function() {
         $(".modal").css({"display": "none", "opacity":"0", "overflow":"auto"});
         $(".modal-dialog").css({"display": "none", "opacity":"0", "overflow":"auto"});
+        $("body").css({"overflow":"auto"});
     });
     
     $("#menu").on("click", function() {
-        //$(".header .sm-nav .nav-list .menu").toggleClass("show");
-      $(".header .sm-nav .nav-list .menu").css({"opacity": "1"});
-      $(".header .sm-nav .nav-list .menu").animate({"right":"0px"});
+      $(".menu").css({"opacity": "1"});
+      $(".menu").animate({"right":"0px"});
+      $("body").css({"overflow":"hidden"});
+      $(".menu-overlay").css({"display":"block"});
     });
-    $(".header .sm-nav .nav-list .menu .fa-times").on("click", function () {
-        $(".header .sm-nav .nav-list .menu").animate({"right":"-210px"});
-        $(".header .sm-nav .nav-list .menu").css({"opacity": "0"});
+    $(".menu .fa-times").on("click", function () {
+        $(".menu").animate({"right":"-210px"});
+        $(".menu").css({"opacity": "0"});
+        $("body").css({"overflow":"auto"});
+        $(".menu-overlay").css({"display":"block"});
+    });
+    $(".menu-overlay").on("click", function () {
+        $(".menu").animate({"right":"-210px"});
+        $(".menu").css({"opacity": "0"});
+        $("body").css({"overflow":"auto"});
+        $(".menu-overlay").css({"display":"none"});
     });
     
 });
-
 
