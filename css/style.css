@@ -19,7 +19,9 @@ a {
   left: 0;
   top: 0;
 }
-
+.main-menu {
+    display: none;
+}
 .upper-nav {
   width: 100%;
   height: 50px;
@@ -173,14 +175,44 @@ a {
 }
 
 .banner {
-  margin: 66px auto;
+  margin: 60px auto;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
-.banner img {
+.banner .img {
+  width: 250px;
+  height: 390px;
   margin: auto;
-  display: block;
+}
+.banner .img img {
+  width: 100%;
+  height: 100%;
+}
+.banner p {
+    font-family: myFirstFont;
+    font-size: 50px;
+    color: #c30b2a;
+    text-align: center;
+    margin: 70px auto 60px;
+}
+.banner button {
+    font-family: myFirstFont;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+    background: #FFF;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 16px 16px 9px;
+    transition: all .4s ease-in-out;
+}
+.banner button:hover {
+    box-shadow: 0px 0px 30px 0px #bd5555;
 }
 .sm-banner {
     display: none;
@@ -207,17 +239,38 @@ a {
     color: #c30b2a;
 }
 .modal-dialog .modal-content .img-one {
-    width: 400px;
-    height: 550px;
+    width: 300px;
+    height: 450px;
     margin: 120px auto 50px;
 }
 .modal-dialog .modal-content .img-two {
     width: 600px;
-    margin: 0 auto 0;
+    margin: auto;
 }
-.modal-dialog .modal-content .img-three {
-    width: 220px;
-    margin: 50px auto;
+.modal-dialog .modal-content .img-two p {
+    font-family: myFirstFont;
+    font-size: 45px;
+    color: #c30b2a;
+    text-align: center;
+    margin: 10px auto 20px;
+}
+.modal-dialog .modal-content .img-three button {
+    font-family: myFirstFont;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+    background: #FFF;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: 0 auto 60px;
+    padding: 16px 16px 9px;
+    transition: all .4s ease-in-out;
+}
+.modal-dialog .modal-content .img-three button:hover {
+    box-shadow: 0px 0px 30px 0px #bd5555;
 }
 .modal-dialog .modal-content .img-one img,
 .modal-dialog .modal-content .img-two img,
@@ -1169,7 +1222,6 @@ a {
   .banner {
     margin: 66px auto;
     width: 100%;
-    height: 300px;
     overflow: hidden;
   }
   .banner img {
@@ -1339,10 +1391,20 @@ a {
         cursor: pointer;
         transition: all .5s ease-in-out;
     }
-  .header .sm-nav .nav-list .menu {
+.menu-overlay {
+        background: rgba(0,0,0, 0.6);
+        z-index: 9999;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+ .menu {
         font-family: myFirstFont;
         font-weight: bold;
-        background: rgba(0,0,0, .9);
+        background: rgba(195,11,42, .9);
         position: fixed;
         top: 0;
         right: -210px;
@@ -1353,21 +1415,21 @@ a {
         opacity: 0;
         transition: all .5s ease-in-out;
     }
-    .header .sm-nav .nav-list .menu .fa-times {
+.menu .fa-times {
         display: block;
         cursor: pointer;
-        color: #c30b2a;
+        color: #333;
         font-size: 24px;
         padding: 0px 22px 12px;
     }
-    .header .sm-nav .nav-list .menu a {
+.menu a {
         display: block;
         color: #F3f3f3;
         padding: 4px 1px 0px 36px;
         margin: 6px 2px 6px 2px;
         transition: all .3s ease-in-out; 
     }
-    .header .sm-nav .nav-list .menu a:hover {
+.menu a:hover {
         text-decoration: none;
         background: #DDD;
         color: #c30b2a;
@@ -1396,7 +1458,9 @@ a {
   .header .col-md-3 {
       display: none;
   }
-
+    .main-menu {
+        display: block;
+    }
   .banner {
     margin: 10px auto 30px;
     width: 100%;
@@ -1411,16 +1475,34 @@ a {
         height: 300px;
         margin: 60px auto 20px auto;
     }
-  .sm-banner .img-two {
-        width: 350px;
-        height: 58px;
-        margin: 20px auto 10px;
+    .sm-banner .img-two {
+        width: 500px;
+        margin: auto;
     }
-  .sm-banner .img-three {
-        width: 115px;
-        height: 58px;
-        margin: 0px auto;
-        cursor: pointer;
+  .sm-banner .img-two p {
+        font-family: myFirstFont;
+        font-size: 40px;
+        color: #c30b2a;
+        text-align: center;
+        margin: 40px auto 30px;
+    }
+  .sm-banner .img-three button {
+        font-family: myFirstFont;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        background: #FFF;
+        border: 1px solid #EEE;
+        border-radius: 4px;
+        text-align: center;
+        display: block;
+        width: 190px;
+        margin: 0 auto 30px;
+        padding: 16px 16px 9px;
+        transition: all .4s ease-in-out;
+    }
+    .sm-banner .img-three button:hover{
+        box-shadow: 0px 0px 30px 0px #bd5555;
     }
   .sm-banner .img-one img,
   .sm-banner .img-two img,
@@ -1633,14 +1715,36 @@ a {
   .sm-banner .img-one {
         width: 230px;
         height: 300px;
+        margin: 60px auto 20px auto;
     }
-  .sm-banner .img-two {
-        width: 366px;
-        height: 65px;
+    .sm-banner .img-two {
+        width: 500px;
+        margin: auto;
     }
-  .sm-banner .img-three {
-        width: 130px;
-        height: 68px;
+  .sm-banner .img-two p {
+        font-family: myFirstFont;
+        font-size: 40px;
+        color: #c30b2a;
+        text-align: center;
+        margin: 40px auto 30px;
+    }
+  .sm-banner .img-three button {
+        font-family: myFirstFont;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        background: #FFF;
+        border: 1px solid #EEE;
+        border-radius: 4px;
+        text-align: center;
+        display: block;
+        width: 190px;
+        margin: 0 auto 30px;
+        padding: 16px 16px 9px;
+        transition: all .4s ease-in-out;
+    }
+    .sm-banner .img-three button:hover{
+        box-shadow: 0px 0px 30px 0px #bd5555;
     }
     .modal-dialog {
         max-width: 600px;
@@ -1649,14 +1753,15 @@ a {
         width: 600px;
     }
     .modal-dialog .modal-content .img-one {
-        width: 300px;
-        height: 450px;
+        width: 200px;
+        height: 310px;
     }
     .modal-dialog .modal-content .img-two {
         width: 500px;
     }
-    .modal-dialog .modal-content .img-three {
-        width: 180px;
+    
+    .modal-dialog .modal-content .img-two p {
+        font-size: 40px;
     }
   .best-article .cel .overlay .read-more {
     width: 80%;
@@ -1728,6 +1833,10 @@ a {
     width: 100%;
     height: 212px;
   }
+    .best-article .owl-carousel-one .owl-prev span, 
+    .best-article .owl-carousel-one .owl-next span {
+        display: none;
+    }
 }
 @media (max-width: 480px) {
   .header {
@@ -1753,6 +1862,20 @@ a {
   .header .intro h3 {
         font-size: 32px;
     }
+    .sm-banner {
+        display: block;
+    }
+    .sm-banner .img-two {
+        width: 400px;
+        margin: auto;
+    }
+  .sm-banner .img-two p {
+        font-size: 36px;
+        margin: 40px auto 25px;
+    }
+  .sm-banner .img-three button {
+        margin: 0 auto 50px;
+    }
   .modal-dialog {
         max-width: 385px;
     }
@@ -1766,15 +1889,16 @@ a {
         z-index: 999;
     }
     .modal-dialog .modal-content .img-one {
-        width: 280px;
-        height: 390px;
+        width: 200px;
+        height: 300px;
     }
     .modal-dialog .modal-content .img-two {
-        width: 300px;
+        width: 330px;
+    }
+    .modal-dialog .modal-content .img-two p{
+        font-size: 32px;
     }
     .modal-dialog .modal-content .img-three {
-        width: 150px;
-        margin: 30px auto;
     }
   .best-article .cel .overlay .read-more {
     width: 50%;
@@ -1796,7 +1920,7 @@ a {
         font-size: 14px;
     }
   .videos .list-vids .listed-vid .vid-detail .play-line {
-        margin: 8px 0 12px 0;
+        margin: 22px 0 16px 0;
     }
   .videos .list-vids .listed-vid .vid-detail .min-detail {
         font-size: 9px;
@@ -1858,19 +1982,23 @@ a {
   .header {
     height: 600px;
   }
-    .sm-banner .img-one {
-        width: 200px;
-        height: 280px;
-    }
+    
     .sm-banner .img-two {
-        width: 320px;
-        height: 56px;
+        width: 350px;
+        margin: auto;
+    }
+  .sm-banner .img-two p {
+        font-size: 36px;
+        margin: 40px auto 25px;
+    }
+  .sm-banner .img-three button {
+        margin: 0 auto 50px;
     }
     .modal-dialog {
-        max-width: 360px;
+        max-width: 350px;
     }
     .modal-dialog .modal-content {
-        width: 360px;
+        width: 350px;
     }
   .best-article .cel .overlay .read-more {
     width: 60%;
@@ -1932,32 +2060,37 @@ a {
     .header .intro p {
         font-size: 17px;
     }
-    .sm-banner .img-one {
-        width: 190px;
-        height: 270px;
-    }
     .sm-banner .img-two {
-        width: 290px;
-        height: 50px;
+        width: 300px;
+        margin: auto;
     }
-    .sm-banner .img-three {
-        margin: 0 auto 60px auto;
+  .sm-banner .img-two p {
+        font-size: 30px;
+        margin: 40px auto 25px;
+    }
+  .sm-banner .img-three button {
+        margin: 0 auto 50px;
+        padding: 14px 14px 9px;
+        width: 170px;
+        font-size: 15px;
     }
     .modal-dialog {
-        max-width: 300px;
+        max-width: 290px;
     }
     .modal-dialog .modal-content {
-        width: 300px;
+        width: 290px;
     }
     .modal-dialog .modal-content .img-one {
-        width: 200px;
-        height: 300px;
+        width: 190px;
+        height: 280px;
     }
     .modal-dialog .modal-content .img-two {
-        width: 250px;
+        width: 260px;
+    }
+    .modal-dialog .modal-content .img-two p {
+        font-size: 27px;
     }
     .modal-dialog .modal-content .img-three {
-        width: 100px;
         margin: 10px auto 30px;
     }
     .best-article .owl-carousel-one {
