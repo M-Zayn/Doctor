@@ -39,6 +39,22 @@ head
           .mark
             img.img-responsive(src='imgs/icon/mark-icon.png')
         .clearfix
+  .main-menu
+    .menu-overlay
+      .menu
+        i.fa.fa-times
+        a(href='#')
+          i.fa.fa-home.home-icon
+          |  Home
+        a(href='#') About Me
+        a(href='#') Form
+        a(href='#') Laboratory
+        a(href='#') Healthcare Quality
+        a(href='#') Contact Us
+        hr
+        a(href='#')
+          i.fa.fa-search  
+          |  Search
   // header
   .header
     .container
@@ -71,21 +87,9 @@ head
         .nav-logo
           img.img-responsive(src='imgs/logo.png')
         .nav-list
-          .nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              i.fa.fa-home.home-icon
-              |  Home
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') About Me
-              a.dropdown-item(href='#') Form
-              a.dropdown-item(href='#') Laboratory
-              a.dropdown-item(href='#') Healthcare Quality
-              a.dropdown-item(href='#') Contact Us
-              .dropdown-divider
-              a.dropdown-item(href='#')
-                i.fa.fa-search  
-                |  Search
-        .clearfix
+          #menu.nav-item.dropdown
+            i.fa.fa-bars
+      .clearfix
       .row
         .col-md-9.wow.fadeInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='0' data-wow-iteration='1')
           .intro
@@ -99,28 +103,33 @@ head
             .doc-img
               img.img-responsive(src='imgs/Layer-3.png')
   // banner
-  .banner#popup(data-toggle='modal' data-target='#exampleModalLong')
-    a(href='#')
-      img.img-responsive(src='imgs/amro banner.jpg')
+  .banner(data-toggle='modal')
+    .container
+      .row
+        .col-md-8
+          p HOW TO MANAGE YOUR STAFF BEHAVIOR
+          button#popup.order-btn ORDER NOW
+        .col-md-4
+          .img
+            img(src='imgs/book.png')
   .sm-banner
     .img-one
       img(src='imgs/book.png')
     .img-two
-      img(src='imgs/how-to.png')
-    .img-three#popup1(data-toggle='modal')
-      img(src='imgs/btn.png')
-  #exampleModalLong.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
-    .modal-dialog(role='document')
+      p HOW TO MANAGE YOUR STAFF BEHAVIOR
+    #popup1.img-three(data-toggle='modal')
+      button#popup.order-btn ORDER NOW
+  .modal
+    .modal-dialog
       .modal-content
         button.close(type='button' data-dismiss='modal' aria-label='Close')
           span(aria-hidden='true') &times;
         .img-one
           img(src='imgs/book.png')
         .img-two
-          img(src='imgs/how-to.png')
-        .img-three(data-toggle='modal')
-          a(href='#')
-            img(src='imgs/btn.png')
+          p HOW TO MANAGE YOUR STAFF BEHAVIOR
+        .img-three(data-toggle='modal' data-target='#exampleModalLong')
+          button#popup.order-btn ORDER NOW
   .best-article
     .container
       .ba-header.wow.slideInLeft(data-wow-duration='1s' data-wow-delay='0' data-wow-offset='100' data-wow-iteration='1')
@@ -809,4 +818,4 @@ head
         .col-md-6.col-sm-6.full-colm.text-right
           p.right
             | Designed And Programming By   
-            span Ibtdi.com
+            span company.com
