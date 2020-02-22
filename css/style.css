@@ -577,6 +577,7 @@ a {
   font-family: myFirstFont, sans-serif;
   display: inline-block;
   margin: 0 9px 0 0;
+  float: left;
 }
 .videos .list-vids .listed-vid .vid-detail .min-detail span i {
   float: left;
@@ -1341,7 +1342,7 @@ a {
   .header .sm-nav .nav-list .menu {
         font-family: myFirstFont;
         font-weight: bold;
-        background: rgba(0,0,0, .6);
+        background: rgba(0,0,0, .9);
         position: fixed;
         top: 0;
         right: -210px;
@@ -1753,15 +1754,16 @@ a {
         font-size: 32px;
     }
   .modal-dialog {
-        max-width: 380px;
+        max-width: 385px;
     }
     .modal-dialog .modal-content {
-        width: 380px;
+        width: 385px;
     }
     .modal-dialog .modal-content .close {
         width: 50px;
         height: 50px;
         font-size: 77px;
+        z-index: 999;
     }
     .modal-dialog .modal-content .img-one {
         width: 280px;
@@ -1791,10 +1793,10 @@ a {
         width: 70%;
     }
   .videos .list-vids .listed-vid .vid-detail p {
-        font-size: 13px;
+        font-size: 14px;
     }
   .videos .list-vids .listed-vid .vid-detail .play-line {
-        margin: 25px 0 16px 0;
+        margin: 22px 0 16px 0;
     }
   .videos .list-vids .listed-vid .vid-detail .min-detail {
         font-size: 9px;
@@ -1871,10 +1873,7 @@ a {
         width: 360px;
     }
   .best-article .cel .overlay .read-more {
-    width: 55%;
-  }
-  .videos .list-vids .scroll-line {
-    left: -9px;
+    width: 60%;
   }
   .videos .list-vids .listed-vid .vid-detail p {
         font-size: 13px;
@@ -1886,7 +1885,7 @@ a {
         font-size: 10px;
     }
   .videos .list-vids .listed-vid .img .overlay .vid-icons {
-        width: 50%;
+        width: 73%;
         margin: 27px auto;
     }
     .videos .list-vids .listed-vid .img .overlay .vid-icons .hexagon {
@@ -1921,12 +1920,9 @@ a {
   .header {
     height: 600px;
   }
-  .header .sm-nav .nav-list .dropdown .dropdown-toggle {
-    padding: 7px 0 0 33px;
+  .header .sm-nav .nav-list .dropdown {
+    padding: 7px 0 0 67px;
   }
-  .header .sm-nav .nav-list .dropdown .show {
-        left: -45px !important;
-    }
     .header .intro h1 {
         font-size: 40px;
     }
@@ -1968,7 +1964,7 @@ a {
         margin: 40px auto;
     }
   .best-article .cel .overlay .read-more {
-    width: 65%;
+    width: 70%;
   }
     .best-article .cel .title p {
         font-size: 13px;
@@ -1983,7 +1979,7 @@ a {
         padding: 0 3px 0 0 0;
     }
   .videos .list-vids .listed-vid .img .overlay .vid-icons {
-        width: 60%;
+        width: 70%;
     }
     .videos .display-vid {
         height: 250px;
