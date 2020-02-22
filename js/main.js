@@ -132,7 +132,17 @@ $(document).ready(function(){
         $(".modal").css({"display": "none", "opacity":"0", "overflow":"auto"});
         $(".modal-dialog").css({"display": "none", "opacity":"0", "overflow":"auto"});
     });
-    $('.dropdown-toggle').dropdown()
+    
+    $("#menu").on("click", function() {
+        //$(".header .sm-nav .nav-list .menu").toggleClass("show");
+      $(".header .sm-nav .nav-list .menu").css({"opacity": "1"});
+      $(".header .sm-nav .nav-list .menu").animate({"right":"0px"});
+    });
+    $(".header .sm-nav .nav-list .menu .fa-times").on("click", function () {
+        $(".header .sm-nav .nav-list .menu").animate({"right":"-210px"});
+        $(".header .sm-nav .nav-list .menu").css({"opacity": "0"});
+    });
     
 });
+
 
